@@ -1,0 +1,134 @@
+/* ----- Top Block ----- */
+.top img{
+    width: 100%;
+}
+
+/* ----- Section 1: Brand Concept ----- */
+.bc{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.bc-img{
+    width: 55%;
+    position: relative;
+}
+
+.bc-img .bc1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bc-img .bc2{
+    position: absolute;
+    top: 80px;
+    left: 151px;
+    z-index: 1;
+}
+
+.bc-img .bc3{
+    position: absolute;
+    top: 45px;
+    left: 386px;
+}
+
+.bc-text{
+    width: 45%;
+}
+
+.bc-text h3{
+    padding: 110px 0 130px 45px;
+}
+
+.bc-img img{}
+
+
+/* ----- Section 2: New Arrival ----- */
+.narrvl{
+    margin-bottom: 150px;
+}
+
+.narrvl h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.narrvl .i-card{
+    margin-bottom: 80px;
+    width: 300px;
+    transition: .3s;
+}
+
+.narrvl .i-card:hover{
+    transform: rotate(3deg);
+    opacity: .8;
+}
+
+.narrvl .i-card img{
+    width: 100%;
+}
+
+.narrvl .i-card h5{
+    text-align: center;
+    color: #748cab;
+    font-weight: 500;
+}
+
+
+/* ----- Section 3: Slider ----- */
+.scontainer{
+    margin-bottom: 150px;
+}
+
+.scontainer img{
+    display: block;
+    margin: 0 auto;
+}
+
+.scontainer img:first-child{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* ----- Section 4: What's New ----- */
+.whatsnew{
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 974px;
+}
+
+.news{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.n-card{
+    width: 405px;
+    transition: .3s;
+}
+
+.n-card h5{}
+
+.n-card img{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.n-card h4{}
+
+.n-card p{
+    padding: 10px 0;
+    color: #26273B;
+}
+
+.n-card:hover{
+    opacity: .8;
+}
