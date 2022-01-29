@@ -42,8 +42,6 @@
     padding: 110px 0 130px 45px;
 }
 
-.bc-img img{}
-
 
 /* ----- Section 2: New Arrival ----- */
 .narrvl{
@@ -115,14 +113,10 @@
     transition: .3s;
 }
 
-.n-card h5{}
-
 .n-card img{
     width: 100%;
     margin: 10px 0;
 }
-
-.n-card h4{}
 
 .n-card p{
     padding: 10px 0;

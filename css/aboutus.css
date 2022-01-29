@@ -1,0 +1,72 @@
+/* ---- Top Block ---- */
+.top{
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+.top h2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.top img{
+    padding-top: 120px;
+}
+
+/* ---- Main Block ---- */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+main .content{
+    width: 50%;
+    padding: 100px 0;
+    position: relative;
+}
+
+main .cms{
+    padding-left: 90px;
+}
+
+main .content h3{
+    margin-bottom: 110px;
+}
+
+main .content p{
+    width: 90%;
+}
+
+main img{
+    margin-bottom: 90px;
+}
+
+.decblock{
+    display: block;
+    background-color: #F0EBD8;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+}
+
+.dec1{
+    top: 125px;
+    left: -60px;
+}
+
+.dec2{
+    top: 90px;
+    left: 420px;
+}
+
+.dec3{
+    top: 180px;
+    left: 200px;
+}
+
+footer{
+    margin-top: 50px;
+}

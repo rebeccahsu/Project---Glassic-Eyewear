@@ -41,6 +41,7 @@ h5{
 
 p{
     font-family: 'Niramit', sans-serif;
+    letter-spacing: 0.98px;
 }
 
 a{
@@ -137,8 +138,6 @@ header{
     display: flex;
 }
 
-.main-sel ol>li>a{}
-
 .main-sel ul>li:hover ol{
     display: block;
 }
@@ -172,8 +171,6 @@ footer .underline{
     margin-top: 15px;
     margin-bottom: 45px;
 }
-
-footer li{}
 
 footer li>a{
     display: inline-block;
