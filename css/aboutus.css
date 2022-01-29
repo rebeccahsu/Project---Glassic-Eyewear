@@ -1,16 +1,16 @@
 /* ---- Top Block ---- */
-.top{
+.atop{
     margin: 0 auto 100px;
     position: relative;
 }
 
-.top h2{
+.atop h2{
     position: absolute;
     top: 30px;
     left: 0;
 }
 
-.top img{
+.atop img{
     padding-top: 120px;
 }
 
