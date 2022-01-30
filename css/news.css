@@ -1,0 +1,105 @@
+/* ---- Top Block ---- */
+.top{
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+.top h2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.top img{
+    padding-top: 120px;
+}
+
+/* ---- Main Block ---- */
+main{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+article{
+    display: flex;
+    margin-bottom: 120px;
+}
+
+article .ndate{
+    width: 30px;
+    padding-top: 120px;
+    margin-right: 12px;
+}
+
+article .ndate>h4{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    color: #C4A87E;   
+}
+
+article .content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+article .content>a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+article .content .more{
+    color: #C4A87E;
+    text-align: center;
+    line-height: 160px;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(51, 51, 51, 0.596);
+    
+    opacity: 0;
+    transition: .8s;
+}
+
+article .content>a:hover .more{
+    opacity: 1;
+}
+
+article .content>a:hover .ntitle{
+    color: #C4A87E;
+}
+
+article .content>a:hover .np{
+    opacity: .8;
+}
+
+article .content .ntitle{
+    margin: 15px 0 8px 0;
+    line-height: 1.2;
+}
+
+article .content .np{
+    color: #26273B;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+
+
+/* .decblock{
+    display: block;
+    background-color: #F0EBD8;
+    width: 850px;
+    height: 220px;
+    position: absolute;
+    top: 550px;
+    left: -220px;
+    z-index: -1;
+} */
