@@ -24,22 +24,22 @@ main>section{
     padding: 0 80px 140px;
 }
 
-.ec-pic{
+.sc-pic{
     width: 50%;
     position: relative;
     font-size: 0;
 }
 
 
-.ec-content{
+.sc-content{
     width: 50%;
 }
 
-.ec-content h3{
+.sc-content h3{
     padding: 20px 0;
 }
 
-.ec-content p{
+.sc-content p{
     padding: 30px 0 50px 0;
 }
 
@@ -47,19 +47,14 @@ main>section{
     position: absolute;
 }
 
-.fr1{
-    top: 330px;
-    left: 200px;
+.fr1, .fr3{
+    top: 320px;
+    left: -20px;
 }
 
 .fr2{
-    top: 303px;
-    left: -50px;
-}
-
-.fr3{
-    top: 320px;
-    left: 190px;
+    top: 280px;
+    left: 250px;
 }
 
 .decblock{
@@ -70,21 +65,15 @@ main>section{
     position: absolute;
 }
 
-.fdec1, .fdec3{
-    top: 325px;
-    left: 190px;
+.dec1, .dec3{
+    top: 320px;
+    left: 30px;
 }
 
-.fdec2{
-    top: 310px;
-    left: 0px;
-    background-color: #26273B;
+.dec2{
+    top: 290px;
+    left: 240px;
 }
-
-/* .fdec3{
-    top: 285px;
-    left: 228px;
-} */
 
 .varight{
     float: right;

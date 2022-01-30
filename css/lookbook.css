@@ -1,0 +1,136 @@
+/* ---- Top Block ---- */
+.top{
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+.top h2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.top img{
+    padding-top: 120px;
+}
+
+/* ---- Main Block ---- */
+main{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+main>section{
+    width: 500px;
+    margin-bottom: 140px;
+}
+
+.look-pic{
+    vertical-align: bottom;
+}
+
+.right .t1{
+    margin: 40px 0 5px 0;
+}
+
+.right .t2{
+    color: #C4A87E;
+    margin-bottom: 100px;
+}
+
+.decblock{
+    display: block;
+    background-color: #F0EBD8;
+    width: 850px;
+    height: 220px;
+    position: absolute;
+    top: 550px;
+    left: -220px;
+    z-index: -1;
+}
+
+/* ---- 跑馬燈---- */
+.pics{
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.pics ul{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -135px;
+    
+}
+
+.pics li{
+    margin: 0 2px;
+}
+
+/* ---- Instagram ---- */
+.ig{
+    margin-bottom: 150px;
+}
+
+.ig h4{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ig ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ig li{
+    border: 1px solid aqua;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    display: flex;
+}
+
+.ig a{
+    width: 100%;
+    text-align: center;
+    line-height: 300px;
+    border: 1px solid red;
+    display: none;
+    transition: .5s;
+}
+
+.ig .ig1{
+    background-image: url("../img/lookbook/ig1.png");
+}
+
+.ig .ig2{
+    background-image: url("../img/lookbook/ig2.png");
+}
+
+.ig .ig3{
+    background-image: url("../img/lookbook/ig3.png");
+}
+
+.ig .ig4{
+    background-image: url("../img/lookbook/ig4.png");
+}
+
+.ig .ig5{
+    background-image: url("../img/lookbook/ig5.png");
+}
+
+.ig .ig6{
+    background-image: url("../img/lookbook/ig6.png");
+}
+
+.ig li:hover a{
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 0.596);
+}
+
