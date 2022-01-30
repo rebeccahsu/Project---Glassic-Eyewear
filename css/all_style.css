@@ -72,9 +72,17 @@ a{
     cursor: pointer;
 }
 
+img{
+    vertical-align: bottom;
+}
+
 /* ------- Header ------- */
 header{
     background-color: #26273B;
+}
+
+.currentpage{
+    color: #F0EBD8;
 }
 
 /* ------- Main-sel ------- */
