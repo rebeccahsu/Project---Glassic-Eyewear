@@ -1,11 +1,24 @@
 // Overlay
-let i;
-var item = document.getElementsByClassName("item");
+// let i;
+var item1 = document.getElementsByClassName("item");
+console.log(item1);
+var item2 = document.querySelectorAll(".item");
+console.log(item2);
 // console.log(item);
 let overlay = document.getElementById("overlay");
 // console.log(overlay);
 let mask = document.getElementById("mask");
 
+document.querySelectorAll(".item").forEach(function(item){
+    item.addEventListener('click', function(){
+        mask.classList.remove("noshow");
+        mask.classList.add("show");
+        overlay.classList.remove("noshow");
+        overlay.classList.add("show");
+    })
+})
+
+/*
 for(let i = 0; i < item.length; i++){
     // console.log(item[i]);
 
@@ -17,6 +30,7 @@ for(let i = 0; i < item.length; i++){
         overlay.classList.add("show");
     });
 };
+*/
 
 
 var xbutton = document.getElementsByClassName("close")[0];
