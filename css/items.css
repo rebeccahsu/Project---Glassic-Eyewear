@@ -1,3 +1,108 @@
+/* ---- Top Block ---- */
+.top{
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+.top h2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 2;
+}
+
+.top img{
+    padding-top: 120px;
+}
+
+/* ---- Top Block Mask---- */
+.topmask{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.596);
+    height: 330px;
+}
+
+.topmask h3{
+    text-align: center;
+    line-height: 330px;
+    color: #f2f2f2;
+}
+
+
+/* ---- Main Block ---- */
 main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.item{
+    display: block;
+    margin-bottom: 60px;
+}
+
+.item h4{
+    text-align: center;
+}
+
+/* ---- Overlay ---- */
+.overlay{
+    position: absolute;
+    z-index: 100;
+    background-color: #f2f2f2;
+    border: 1px solid #C4A87E;
+    width: 55%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: none;
+}
+
+.overlay>a{
+    float: right;
+    padding-right: 5px;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.ocontent{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.otext{
+    margin-left: 40px;
+    width: 40%;
+}
+
+.otext h4{
+    margin-bottom: 20px;
+}
+
+.otext h5{
+    margin: 10px 0;
+}
+
+.otext p{
+    padding-bottom: 10px;
+}
+
+.overlay:target, .overlay:target + #mask{
+    display: block;
+}
+
+#mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
