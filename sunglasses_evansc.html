@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Niramit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all_style.css">
-    <link rel="stylesheet" href="css/sunglasses.css">
+    <link rel="stylesheet" href="css/items.css">
 </head>
 <body>
     <!-- Header -->
@@ -37,69 +37,107 @@
 
     <!-- Top Block -->
     <section class="top wrapper">
-        <h2>SUNGLASSES</h2>
+        <h2>EYEGLASSES</h2>
         <img src="img/sunglasses/suntop.png" alt="">
+        <!-- Top Block Mask-->
+        <div class="topmask wrapper">
+            <h3>Evans C.</h3>
+        </div>
     </section>
 
     <!-- Main Block -->
     <main class="wrapper">
-        <!-- Collection 1-->
-        <section class="sc1">
-            <div class="sc-content">
-                <h3>Evans C.</h3>
-                <p>
-                    Evans C. is easy on the eyes and versatile enough to compliment a wide range of personal styles and tastes. 
-                    <br><br>
-                    The shape of the lens is inspired by vintage glasses, but renovated in a new and trendy way.
-                </p>
-                <a class="viewMore valeft" href="sunglasses_evansc.html">View All</a>
-            </div>
-            <div class="sc-pic">
-                <img class="smodel varight" src="img/sunglasses/smodel1.png" alt="">
-                <span class="decblock dec1"></span>
-                <img class="frame fr1" src="img/sunglasses/sframe1.png" alt="">
-            </div>
-        </section>
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm135.png" alt="Jones M. 135">
+            <h4 class="itemname">Evans C. 135</h4>
 
-        <!-- Collection 2-->
-        <section class="sc2">
-            <div class="sc-pic">
-                <img class="smodel" src="img/sunglasses/smodel2.png" alt="">
-                <span class="decblock dec2"></span>
-                <img class="frame fr2" src="img/sunglasses/sframe2.png" alt="">
+            <div class="info">
+                <p class="icolor">Brown Tortoise</p>
+                <p class="size">46/20 mm</p>
+                <p class="material">Acetate</p>
             </div>
-            <div class="sc-content">
-                <h3>Smith W.</h3>
-                <p>
-                    Smith W. is one of the most classic and enduring sunglass styles of all time - for men and women.
-                    <br><br>
-                    This fusion creates a unisex style that goes well with almost any wardrobe. Retro and novel in tandem.
-                </p>
-                <a class="viewMore varight" href="sunglasses_evansc.html">View All</a>
-            </div>
-        </section>
+        </a>
 
-        <!-- Collection 3-->
-        <section class="sc3">
-            <div class="sc-content">
-                <h3>Clarke J.</h3>
-                <p>
-                    Clarke J. is a staple rectangular, masculine frame. Incorporating beveled detailing throughout, while maintaining a light presence, 
-                    <br><br>
-                    Made from sustainable cellulose acetate, these frames are lightweight and feature highly adjustable temple tips to make it easy to bend over your ears to either tighten or loosen the frame fit as needed.    
-                </p>
-                <a class="viewMore valeft" href="sunglasses_evansc.html">View All</a>
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm267.png" alt="Jones M. 267">
+            <h4 class="itemname">Evans C. 267</h4>
+
+            <div class="info">
+                <p class="icolor">Olive Green</p>
+                <p class="size">48/19 mm</p>
+                <p class="material">Acetate</p>
             </div>
-            <div class="sc-pic">
-                <img class="smodel varight" src="img/sunglasses/smodel3.png" alt="">
-                <span class="decblock dec3"></span>
-                <img class="frame fr3" src="img/sunglasses/sframe3.png" alt="">
+        </a>
+
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm268.png" alt="Jones M. 268">
+            <h4 class="itemname">Evans C. 268</h4>
+
+            <div class="info">
+                <p class="icolor">Black & Brown Tortoise</p>
+                <p class="size">48/19 mm</p>
+                <p class="material">Acetate</p>
             </div>
-        </section>
-    
-        <a href="#">View All Models</a>
+        </a>
+
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm305.png" alt="Jones M. 305">
+            <h4 class="itemname">Evans C. 305</h4>
+
+            <div class="info">
+                <p class="icolor">Brown Transparent</p>
+                <p class="size">48/19 mm</p>
+                <p class="material">Acetate</p>
+            </div>
+        </a>
+
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm563.png" alt="Jones M. 563">
+            <h4 class="itemname">Evans C. 563</h4>
+
+            <div class="info">
+                <p class="icolor">Transparent</p>
+                <p class="size">46/20 mm</p>
+                <p class="material">Acetate</p>
+            </div>
+        </a>
+
+        <a href="#overlay" class="item">
+            <img class="ipic" src="img/items/jonesm145.png" alt="Jones M. 145">
+            <h4 class="itemname">Evans C. 145</h4>
+
+            <div class="info">
+                <p class="icolor">Green Transparent</p>
+                <p class="size">50/20 mm</p>
+                <p class="material">Acetate</p>
+            </div>
+        </a>
+
+
+            <!-- Overlay -->
+        <div class="overlay noshow" id="overlay">
+            <button class="close">X</button>
+            <div class="ocontent">
+                <div class="opic" id="opic">
+                </div>
+                <div class="otext">
+                    <h4 id="oname"></h4>
+                    <h5>Color</h5>
+                    <p id="ocolor"></p>
+                    <h5>Size</h5>
+                    <p id="osize"></p>
+                    <h5>Material</h5>
+                    <p id="omaterial"></p>
+                </div>
+            </div>
+
+        </div>
 
     </main>
+
+    <!-- Overlay mask -->
+    <div id="mask" class="noshow" onclick="document.location='#overlay';"></div>
+
 
    
     <!-- Footer -->
@@ -149,5 +187,6 @@
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
     
+    <script src="javascript/items.js"></script>
 </body>
 </html>

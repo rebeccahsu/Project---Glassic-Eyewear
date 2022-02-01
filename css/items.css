@@ -48,6 +48,10 @@ main{
     text-align: center;
 }
 
+.item>.info{
+    display: none;
+}
+
 /* ---- Overlay ---- */
 .overlay{
     /* position: absolute; */
@@ -83,7 +87,7 @@ main{
 
 
 .otext{
-    margin-left: 40px;
+    margin-left: 50px;
     width: 40%;
 }
 
