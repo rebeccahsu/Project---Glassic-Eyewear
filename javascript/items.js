@@ -46,3 +46,5 @@ mask.addEventListener("click", function(){
     overlay.classList.remove("show");
     overlay.classList.add("noshow");
 });
+
+// 抓資料

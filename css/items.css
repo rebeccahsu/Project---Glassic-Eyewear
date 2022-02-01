@@ -64,12 +64,16 @@ main{
     margin: 0 auto;
 }
 
-.overlay>a{
+.overlay>button{
     float: right;
     padding-right: 5px;
     font-family: Arial;
     font-size: 25px;
+    color: #C4A87E;
+    border: none;
+    cursor: pointer;
 }
+
 
 .ocontent{
     margin: 40px 0;

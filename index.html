@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="container">
         <!-- Main-sel -->
         <nav class="main-sel wrapper">
             <h1><a href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
@@ -84,9 +84,32 @@
     </section>
 
     <!-- Section 3: Slider -->
-    <section class="scontainer wrapper">
-        <img src="img/index/mbanner1@1.5x.png" alt="">
-        <img src="img/index/sliderdot.png" alt="">
+    <section class="scontainer wrapper vcontainer">
+        <video width="1104" autoplay loop>
+            <source src="img/video/pexels-joshua-6866760 (online-video-cutter.com).mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="logomark">
+            <img src="img/logo.png" alt="">
+        </div>
+        
+        <!-- <div class="slide">
+            <img src="img/index/mbanner1@1.5x.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/index/mbanner1@1.5x.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="img/index/mbanner1@1.5x.png" alt="">
+        </div> -->
+
+        <!-- The dots/circles -->
+        <!-- <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div> -->
+        
     </section>
 
     <!-- Section 4: What's New -->
@@ -159,6 +182,8 @@
         </nav>
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
+
+    <script src="javascript/index.js"></script>
     
 </body>
 </html>

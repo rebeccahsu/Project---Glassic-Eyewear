@@ -53,7 +53,6 @@ a{
 .wrapper{
     width: 1104px;
     margin: 0 auto;
-    /* border: 1px solid gray; */
 }
 
 .viewMore{
@@ -90,6 +89,10 @@ header{
     position: sticky;
     top: 0px;
     z-index: 29;
+}
+
+.container{
+    width: 100%;
 }
 
 .currentpage{
