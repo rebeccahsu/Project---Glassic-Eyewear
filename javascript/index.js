@@ -14,5 +14,5 @@
 //     dots[i].className = dots[i].className.replace(" active", "");
 //     }    
 //     slides[slideIndex-1].style.display = "block";
-//     setTimeout(slidesShow, 2000);
+//     setTimeout(slidesShow, 2500);
 // }
