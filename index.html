@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/titleicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <!-- Header -->
@@ -83,6 +84,8 @@
             
     </section>
 
+    <span class="decitems"></span>
+
     <!-- Section 3: Slider -->
     <section class="wrapper vcontainer">
         <video width="1104" autoplay loop>
@@ -114,6 +117,7 @@
 
     <!-- Section 4: What's New -->
     <section class="whatsnew wrapper">
+        <span class="decnews"></span>
         <h3>What's New</h3>
         <div class="news">
             <div class="n-card">
@@ -183,7 +187,27 @@
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
 
+    <!-- <i class="fas fa-angle-up bttop" id="bttop"></i> -->
     <script src="javascript/index.js"></script>
-    
-</body>
+    <!-- <script>
+        var bttop = document.getElementById("bttop");
+        const scrollContainer = () => {
+        return document.documentElement || document.body;
+        };
+
+        document.addEventListener("scroll", function(){
+        if (scrollContainer().scrollTop > 300) {
+            bttop.classList.add("show")
+        } else {
+            bttop.classList.remove("show")
+        }
+        });
+
+        // bttop.on('click', function(e) {
+        // e.preventDefault();
+        // $('html, body').animate({scrollTop:0}, '300');
+        // });
+
+    </script>
+</body> -->
 </html>

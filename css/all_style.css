@@ -243,5 +243,31 @@ footer p{
     letter-spacing: 1.25px;
     padding-top: 50px;
 }
+/* 
+.bttop{
+    display: none;
+    font-size: 25px;
+    color: #F0EBD8;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    background-color: #C4A87E;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 100%;
+    transition: 0.5s;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 99;
+}
+  
+.bttop:hover{
+    opacity: 60%;
+}
 
+.show{
+    display: block;
+} */
 
