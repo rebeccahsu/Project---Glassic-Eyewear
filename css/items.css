@@ -32,7 +32,7 @@
 
 
 /* ---- Main Block ---- */
-main{
+.main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -42,6 +42,12 @@ main{
 .item{
     display: block;
     margin-bottom: 60px;
+    transition: .3s;
+}
+
+.item:hover{
+    transform: rotate(3deg);
+    cursor: pointer;
 }
 
 .item h4{
