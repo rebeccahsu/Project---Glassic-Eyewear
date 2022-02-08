@@ -65,10 +65,24 @@ main>section{
     top: 0;
     left: -135px;
     
+    animation: marqee 60s linear infinite;
 }
 
 .pics li{
     margin: 0 2px;
+    /* animation: marqee 50s linear 5s 1; */
+}
+
+@keyframes marqee{
+    0% {
+     left: 0;
+     transform: translateX(0%);
+    }
+   
+    100% {
+     left: 0;
+     transform: translateX(-100%);
+    }
 }
 
 /* ---- Instagram ---- */

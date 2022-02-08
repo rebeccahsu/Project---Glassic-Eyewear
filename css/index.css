@@ -13,7 +13,7 @@
 }
 
 .bc-img{
-    width: 55%;
+    width: 50%;
     position: relative;
 }
 
@@ -33,15 +33,15 @@
 .bc-img .bc3{
     position: absolute;
     top: 45px;
-    left: 386px;
+    left: 375px;
 }
 
 .bc-text{
-    width: 45%;
+    width: 50%;
 }
 
 .bc-text h3{
-    padding: 110px 0 130px 45px;
+    padding: 110px 0 130px 80px;
 }
 
 
@@ -210,19 +210,52 @@
 @media screen and (max-width: 575.98px){
 
 }
-  
+*/  
 @media (min-width: 576px) and (max-width: 767.98px){
-
+    header{
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .bc{
+        flex-direction: column;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .i-card{
+        margin: 0 auto;
+    }
+    .whatsnew>h3{
+        text-align: center;
+    }
+    .news{
+        flex-direction: column;
+    }
+    .n-card{
+        margin: 10px auto;
+    }
 }
-  
+
 @media (min-width: 768px) and (max-width: 991.98px){
-
+    header{
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+    }
 }
-  
+/*
 @media (min-width: 992px) and (max-width: 1199.98px){
-
+     header{
+        width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+    }
 }
-  
+ 
 @media (min-width: 1200px) and (max-width: 1399.98px){
 
 }

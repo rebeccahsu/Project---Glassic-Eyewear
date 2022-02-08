@@ -53,6 +53,7 @@ a{
 .wrapper{
     width: 1104px;
     margin: 0 auto;
+    /* padding: 0 15px; */
 }
 
 .viewMore{
@@ -207,6 +208,11 @@ footer .icon{
 footer .icon img{
     margin-right: 30px;
     width: 33px;
+    transition: .3s;
+}
+
+footer .icon img:hover{
+    opacity: .6;
 }
 
 footer .newsletter input{
