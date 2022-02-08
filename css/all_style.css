@@ -221,7 +221,7 @@ footer .newsletter input{
 }
 
 footer .newsletter input.the_text:focus{
-    border:3px solid #C4A87E;
+    border: 2px solid #C4A87E;
     outline: none;
 }
 
@@ -231,8 +231,15 @@ footer .newsletter input.the_btn{
     color: #f2f2f2;
     background-color: #C4A87E;
     border-radius: 5px;
+    border: none;
     padding: 5px;
     width: 100px;
+    transition: .3s;
+}
+
+footer .newsletter input.the_btn:hover{
+    background-color: #748cab;
+    cursor: pointer;
 }
 
 footer .newsletter h5{
