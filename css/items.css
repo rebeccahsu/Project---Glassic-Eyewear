@@ -1,20 +1,3 @@
-/* ---- Top Block ---- */
-.top{
-    margin: 0 auto 100px;
-    position: relative;
-}
-
-.top h2{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    z-index: 2;
-}
-
-.top img{
-    padding-top: 120px;
-}
-
 /* ---- Top Block Mask---- */
 .topmask{
     position: absolute;

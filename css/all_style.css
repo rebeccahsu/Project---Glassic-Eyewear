@@ -87,7 +87,8 @@ img{
 /* ------- Header ------- */
 header{
     background-color: #26273b;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
     z-index: 29;
 }
@@ -176,6 +177,22 @@ header .hamburger{
 header .hamburger img{
     width: 50px;
     padding: 3px;
+}
+
+/* ------- Top Block -------*/
+.top{
+    margin: 65px auto 100px;
+    position: relative;
+}
+
+.top h2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.top img{
+    padding-top: 120px;
 }
 
 /* ------- Footer ------- */
