@@ -35,15 +35,8 @@ main .content h3{
     margin-bottom: 110px;
 }
 
-main .content p{
-    width: 90%;
-}
-
-main img{
-    margin-bottom: 90px;
-}
-
-.decblock{
+main .content h3::after{
+    content: "";
     display: block;
     background-color: #F0EBD8;
     width: 130px;
@@ -52,19 +45,27 @@ main img{
     z-index: -1;
 }
 
-.dec1{
+.titlebc::after{
     top: 125px;
     left: -60px;
 }
 
-.dec2{
+.titlecms::after{
     top: 90px;
     left: 420px;
 }
 
-.dec3{
+.titlefd::after{
     top: 180px;
     left: 200px;
+}
+
+main .content p{
+    width: 90%;
+}
+
+main img{
+    margin-bottom: 90px;
 }
 
 footer{

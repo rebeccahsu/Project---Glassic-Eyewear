@@ -21,19 +21,45 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
+    transition: .9s;
+}
+
+.bc-img .bc1:hover{
+    transform: scale(1.1) translateX(-30px) translateY(10px);
+    /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3); */
+}
+
+.bc-img .bc1:hover + .bc2{
+    transform: scale(0.9) translateX(17px);
 }
 
 .bc-img .bc2{
     position: absolute;
     top: 80px;
     left: 151px;
-    z-index: 1;
+    z-index: 3;
+    transition: .9s;
+}
+
+.bc-img .bc2:hover{
+    transform: scale(1.05);
 }
 
 .bc-img .bc3{
     position: absolute;
     top: 45px;
     left: 375px;
+    z-index: 1;
+    transition: .9s;
+}
+
+.bc-img .bc3:hover{
+    transform: scale(1.1) translateY(-25px) translateX(20px);
+}
+
+.bc-img .bc3:hover + .bc2{
+    transform: scale(0.9) translateY(25px) translateX(-20px);
 }
 
 .bc-text{
@@ -94,7 +120,7 @@
     left: 0px;
 }
 
-/* ----- Section 3: Slider ----- */
+/* ----- Section 3: Video ----- */
 
 /*
 .slide{
@@ -170,6 +196,18 @@
     position: relative;
 }
 
+.whatsnew>h3::after{
+    content:"";
+    display: block;
+    background-color: #F0EBD8;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    z-index: -1;
+    top: 22px;
+    left: 185px;
+}
+
 .news{
     display: flex;
     justify-content: space-between;
@@ -207,7 +245,7 @@
 }
 
 /*
-@media screen and (max-width: 575.98px){
+@media (max-width: 575.98px){
 
 }
 */  

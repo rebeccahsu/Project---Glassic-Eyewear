@@ -166,6 +166,17 @@ header{
     opacity: 1;
 }
 
+/* ------- Hamburger ------- */
+header .hamburger{
+    width: 60px;
+    float: right;
+    display: none;
+}
+
+header .hamburger img{
+    width: 50px;
+    padding: 3px;
+}
 
 /* ------- Footer ------- */
 footer{
@@ -279,4 +290,24 @@ footer p{
 .show{
     display: block;
 } */
+@media (max-width: 575.98px){
+    .main-sel{
+        display: none;
+        background-color: #26273B;
+    }
 
+    header .hamburger{
+        display: block;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .main-sel{
+        display: none;
+        background-color: #26273B;
+    }
+    
+    header .hamburger{
+        display: block;
+    }
+}
