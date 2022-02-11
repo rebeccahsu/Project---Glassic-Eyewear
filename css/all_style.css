@@ -328,3 +328,44 @@ footer p{
         display: block;
     }
 }
+
+/* ------滑入動畫------ */
+.slidein{
+    opacity: 0;
+   transition: 2.5s;
+}
+
+.ltr{
+    transform: translateX(-30%) scale(0.8);
+}
+
+.rtl{
+    transform: translateX(30%) scale(0.8);
+}
+
+.slidein.active{
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+
+.fadein{
+    opacity: .1;
+    transform: scale(0.8);
+    transition: 2.5s;
+}
+
+.fadein.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.shrink{
+    opacity: 0;
+    transform: scale(1.3);
+    transition: 2.5s;
+}
+
+.shrink.active{
+    opacity: 1;
+    transform: scale(1);
+}
