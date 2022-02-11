@@ -24,13 +24,10 @@ window.addEventListener("scroll", function(){
     let pic3 = document.querySelector("img.bc3");
     
     let slidein = document.querySelectorAll("img.slidein");
-    let bctext = document.querySelector("div.bc-text");
+    // let bctext = document.querySelector("div.bc-text");
     
     if(window.scrollY >= (bc.offsetTop * 0.5)){
         // console.log("here");
-        
-        
-        bctext.classList.add("active");
        
         var interval = 250;
         var i = 1;
@@ -46,7 +43,6 @@ window.addEventListener("scroll", function(){
         });
 
     }else{
-        bctext.classList.remove("active");
         pic1.classList.remove("active");
         pic2.classList.remove("active");
         pic3.classList.remove("active");

@@ -25,10 +25,10 @@ article .ndate>h4{
     color: #C4A87E;   
 }
 
-.verticaltext{
+/* .verticaltext{
     writing-mode: vertical-lr;
     color: #C4A87E; 
-}
+} */
 
 article .content{
     width: 400px;
