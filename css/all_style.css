@@ -66,11 +66,36 @@ a{
     transition: 0.5s;
 }
 
+/* .viewMore::after{
+    content: "";
+    display: none;
+    margin-top: 5px;
+    transform: translateY(5px);
+    background-color: #748CAB;
+    margin: 0 auto;
+    width: 90px;
+    height: 5px;
+} */
+
+
+
 .viewMore:hover{
     border-bottom: 5px solid #748CAB;
     color: #748CAB;
     cursor: pointer;
+    /* animation: underline 5s infinite; */
 }
+
+
+/* @keyframes underline{
+    0% {
+        border-bottom: 0px solid #748CAB;
+    }
+    
+    100% {
+        border-bottom: 5px solid #748CAB;
+    }
+} */
 
 img{
     vertical-align: bottom;

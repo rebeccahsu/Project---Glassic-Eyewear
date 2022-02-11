@@ -35,6 +35,12 @@ main>section{
 }
 
 /* ---- 跑馬燈---- */
+.lbcontainer{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .pics{
     height: 300px;
     margin: 0 auto;
@@ -49,7 +55,7 @@ main>section{
     top: 0;
     left: -135px;
     
-    animation: marqee 140s linear infinite;
+    animation: marqee 140s linear 1;
 }
 
 .pics li{
