@@ -23,6 +23,8 @@ let slidein = document.getElementsByClassName("slidein");
 for(let i = 0; i < slidein.length; i++){
     scroll(slidein[i]);
 }
+console.log(slidein[3]);
+console.log(slidein[4]);
 
 let fadein = document.getElementsByClassName("fadein");
 for(let i = 0; i < fadein.length; i++){

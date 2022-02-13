@@ -193,15 +193,109 @@ header{
 }
 
 /* ------- Hamburger ------- */
-header .hamburger{
-    width: 60px;
-    float: right;
-    display: none;
+.ham_sel{
+    position: relative;
 }
 
-header .hamburger img{
-    width: 50px;
+div.ham-nav{
+    display: none;
+    height: 50px;
+}
+
+div.ham-nav>h1{
+    width: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    line-height: 45px;
+}
+
+div.ham-nav .hamlogo img{ 
+    width: 70px;
     padding: 3px;
+}
+
+.ham_b .inner, .ham_b::before, .ham_b::after{
+    content: "";
+    background-color: #C4A87E;
+    display: block;
+    width: 30px;
+    height: 1px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: .5s;
+}
+
+.ham_b{
+    float: right;
+    cursor: pointer;
+    padding: 9px 15px;
+}
+
+.ham-menu{
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+ul.ham-menu{
+    width: 75%;
+    position: absolute;
+    right: 0px;
+    /* border: 1px solid pink; */
+    background-color: #26273B;
+    /* display: none; */
+}
+
+.ham-menu li{
+    margin: 0 auto;
+    border: 1px solid lightblue;
+    padding: 8px;
+    /* text-align: right; */
+}
+
+.ham-menu ol>li{
+    padding: 8px 0;
+}
+
+.ham-menu a{
+    font-size: 35px;
+    border: 1px solid yellow;
+}
+
+/* ---hamburger動畫--- */
+.ham_b:hover::before{
+    transform: translateY(12px) rotate(135deg);
+}
+
+.ham_b:hover::after{
+    transform: translateY(-5px) rotate(-135deg);
+}
+
+.ham_b:hover .inner{
+    transform: scale(0);
+}
+
+/* --------- Header Mediaquery----------- */
+@media (max-width: 575.98px){
+    .main-sel{
+        display: none;
+        /* background-color: #26273B; */
+    }
+
+    div.ham-nav{
+        display: block;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .main-sel{
+        display: none;
+        /* background-color: #26273B; */
+    }
+    
+    div.ham-nav{
+        display: block;
+    }
 }
 
 /* ------- Top Block -------*/
@@ -333,27 +427,7 @@ footer p{
 .show{
     display: block;
 } */
-@media (max-width: 575.98px){
-    .main-sel{
-        display: none;
-        background-color: #26273B;
-    }
 
-    header .hamburger{
-        display: block;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px){
-    .main-sel{
-        display: none;
-        background-color: #26273B;
-    }
-    
-    header .hamburger{
-        display: block;
-    }
-}
 
 /* ------滑入動畫------ */
 .slidein{
