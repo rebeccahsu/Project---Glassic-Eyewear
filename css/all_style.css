@@ -53,7 +53,7 @@ a{
 .wrapper{
     width: 1104px;
     margin: 0 auto;
-    /* padding: 0 15px; */
+    padding: 0 15px;
 }
 
 .viewMore{
@@ -317,25 +317,6 @@ ul.ham-menu{
 }
 
 /* --------- Header Mediaquery----------- */
-/* @media (max-width: 575.98px){
-    .main-sel{
-        display: none;
-    }
-
-    div.ham-nav{
-        display: block;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px){
-    .main-sel{
-        display: none;
-    }
-    
-    div.ham-nav{
-        display: block;
-    }
-} */
 
 @media (max-width: 767.98px){
     .main-sel{
@@ -450,8 +431,69 @@ footer p{
     padding-top: 50px;
 }
 
+footer .ftitle>h5{
+    display: inline-block;
+}
+
+footer .arrow{
+    display: none;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+
 @media (max-width: 767.98px){
+    footer{
+        padding: 30px 50px;
+    }
     
+    footer nav{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    footer .ftitle>h5{
+        margin-top: 20px;
+    }
+
+    footer .arrow{
+        display: inline-block;
+    }
+
+    footer .underline{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #748cab;
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+
+    footer ul{
+        display: none;
+    }
+
+    footer .icon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+    
+    footer .icon img{
+        margin-right: 0;
+    }
+
+    footer .newsletter h5{
+        margin-bottom: 10px;
+    }
+
+    footer .newsletter input{
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
 }
 
 /* ------滑入動畫------ */
