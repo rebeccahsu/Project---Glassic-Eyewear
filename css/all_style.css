@@ -244,7 +244,7 @@ ul.ham-menu{
     /* border: 1px solid pink; */
     background-color: #26273bf3;
     /* display: none; */
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 5px 5px;
 }
 
 .ham-menu li{
@@ -308,10 +308,9 @@ ul.ham-menu{
 }
 
 /* --------- Header Mediaquery----------- */
-@media (max-width: 575.98px){
+/* @media (max-width: 575.98px){
     .main-sel{
         display: none;
-        /* background-color: #26273B; */
     }
 
     div.ham-nav{
@@ -322,9 +321,18 @@ ul.ham-menu{
 @media (min-width: 576px) and (max-width: 767.98px){
     .main-sel{
         display: none;
-        /* background-color: #26273B; */
     }
     
+    div.ham-nav{
+        display: block;
+    }
+} */
+
+@media (max-width: 767.98px){
+    .main-sel{
+        display: none;
+    }
+
     div.ham-nav{
         display: block;
     }
@@ -432,33 +440,6 @@ footer p{
     letter-spacing: 1.25px;
     padding-top: 50px;
 }
-/* 
-.bttop{
-    display: none;
-    font-size: 25px;
-    color: #F0EBD8;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-top: 4px;
-    background-color: #C4A87E;
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: 100%;
-    transition: 0.5s;
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 99;
-}
-  
-.bttop:hover{
-    opacity: 60%;
-}
-
-.show{
-    display: block;
-} */
 
 
 /* ------滑入動畫------ */
