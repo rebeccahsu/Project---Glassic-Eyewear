@@ -241,19 +241,25 @@ div.ham-nav .hamlogo img{
     padding: 9px 15px;
 }
 
-.ham-menu{
-    /* border: 1px solid red; */
-    padding: 10px;
-}
-
 ul.ham-menu{
     width: 75%;
     position: absolute;
     right: 0px;
+    transform: translateX(-100%); 
     /* border: 1px solid pink; */
     background-color: #26273bf3;
     /* display: none; */
     border-radius: 0 0 5px 5px;
+    padding: 10px;
+    /* transition: .3s; */
+    /* opacity: 0; */
+    transition: 1s;
+    transform: translateX(120%);
+}
+
+ul.ham-menu.menuactive{
+    opacity: 1;
+    transform: translateX(0%); 
 }
 
 .ham-menu li{
@@ -301,6 +307,43 @@ ul.ham-menu{
 
 .ham-menu .minus{
     transform: rotate(90deg) translate(-30px, -10px);
+}
+
+ol.ham_subsel{
+    animation: subsel .5s linear 1;
+}
+
+
+.ham_subsel li:first-child::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F0EBD8;
+    margin-bottom: 20px;
+    animation: subsel .5s linear 1;
+}
+
+.ham_subsel li:last-child::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F0EBD8;
+    margin: 20px 0;
+    animation: subsel .5s linear 1;
+}
+
+@keyframes subsel{
+    0% {
+        /* width: 0; */
+        opacity: 0;
+    }
+
+    100%{
+        /* width: 100%; */
+        opacity: 1;
+    }
 }
 
 /* --------- Header Mediaquery----------- */
@@ -489,7 +532,7 @@ footer .arrow{
 /* ------滑入動畫------ */
 .slidein{
     opacity: 0;
-   transition: 2.5s;
+    transition: 2.5s;
 }
 
 .ltr{
