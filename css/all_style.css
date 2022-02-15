@@ -242,27 +242,59 @@ ul.ham-menu{
     position: absolute;
     right: 0px;
     /* border: 1px solid pink; */
-    background-color: #26273B;
+    background-color: #26273bf3;
     /* display: none; */
+    border-radius: 0 0 3px 3px;
 }
 
 .ham-menu li{
-    margin: 0 auto;
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
     padding: 8px;
     /* text-align: right; */
+    margin-left: 10px;
 }
 
 .ham-menu ol>li{
-    padding: 8px 0;
+    padding: 8px 10px;
 }
 
 .ham-menu a{
     font-size: 35px;
-    border: 1px solid yellow;
+    transition: .5s;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: block;
 }
 
-/* ---hamburger動畫--- */
+.ham-menu a:hover{
+    color: #F0EBD8;
+}
+
+.ham-menu li.pli:hover .plus, .ham-menu li.pli:hover .plus::after{
+    background-color: #F0EBD8;
+}
+
+.ham-menu li.pli{
+    cursor: pointer;
+}
+
+.ham-menu .plus, .ham-menu .plus::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #C4A87E;
+    transition: .5s;
+    cursor: pointer;
+    float: right;
+    transform: translate(-30px, -32px);
+}
+
+.ham-menu .plus::after{
+    transform: rotate(90deg);
+}
+
+/* ---hamburger 按鈕關閉動畫--- */
 .ham_b:hover::before{
     transform: translateY(12px) rotate(135deg);
 }

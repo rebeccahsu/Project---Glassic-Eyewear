@@ -1,6 +1,27 @@
 "use strict";
 
 // Hamburger
+let ham_b = document.querySelector("div.ham_b");
+ham_b.addEventListener("click", function(){
+    let ham_menu = document.querySelector("ul.ham-menu");
+    if(ham_menu.classList.contains("noshow")){
+        ham_menu.classList.remove("noshow");
+    }else{
+        ham_menu.classList.add("noshow");
+    };
+    
+});
+
+let product_li = document.querySelector("li.pli");
+product_li.addEventListener("click", function(){
+    let p_subsel = document.querySelector("ol.ham_subsel");
+    if(p_subsel.classList.contains("noshow")){
+        p_subsel.classList.remove("noshow");
+    }else{
+        p_subsel.classList.add("noshow");
+    };
+    
+});
 
 
 // ----- Scroll 事件: 動畫 active-------
@@ -75,25 +96,25 @@ scroll(fd_img);
 // let emodel = document.querySelector("img.emodel");
 // scroll(emodel);
 
-//-----------[lookbook]-------------------
-//marqee
-var ul_marqee = document.getElementsByClassName("marqeepics")[0];
-console.log(ul_marqee);
-console.log(typeof(ul_marqee));
-console.log(ul_marqee.innerHTML);
+// //-----------[lookbook]-------------------
+// //marqee
+// var ul_marqee = document.getElementsByClassName("marqeepics")[0];
+// console.log(ul_marqee);
+// console.log(typeof(ul_marqee));
+// console.log(ul_marqee.innerHTML);
 
-var arr_marqee = [ul_marqee.innerHTML];
-console.log(arr_marqee);
-arr_marqee.push(ul_marqee.innerHTML);
+// var arr_marqee = [ul_marqee.innerHTML];
+// console.log(arr_marqee);
+// arr_marqee.push(ul_marqee.innerHTML);
 
 
-setInterval(function(){
-    arr_marqee.push(ul_marqee.innerHTML);
-    ul_marqee.insertAdjacentHTML("beforeend", arr_marqee[1]);
-    console.log("10s");
-  }, 10000);
+// setInterval(function(){
+//     arr_marqee.push(ul_marqee.innerHTML);
+//     ul_marqee.insertAdjacentHTML("beforeend", arr_marqee[1]);
+//     console.log("10s");
+//   }, 10000);
 
-setInterval(function(){
-    arr_marqee.shift();
-    console.log("shift");
-}, 20000);
+// setInterval(function(){
+//     arr_marqee.shift();
+//     console.log("shift");
+// }, 20000);
