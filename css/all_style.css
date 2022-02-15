@@ -109,6 +109,15 @@ img{
     display: none;
 }
 
+@media (max-width: 767.98px){
+    .wrapper{
+        width: 100%;
+    }
+    .viewMore{
+        margin-top: 50px;
+    }
+}
+
 /* ------- Header ------- */
 header{
     background-color: #26273b;
@@ -441,6 +450,9 @@ footer p{
     padding-top: 50px;
 }
 
+@media (max-width: 767.98px){
+    
+}
 
 /* ------滑入動畫------ */
 .slidein{
