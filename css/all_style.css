@@ -224,7 +224,7 @@ div.ham-nav .hamlogo img{
     padding: 3px;
 }
 
-.ham_b .inner, .ham_b::before, .ham_b::after{
+.ham_b .hb_1, .ham_b .hb_2, .ham_b .hb_3{
     content: "";
     background-color: #C4A87E;
     display: block;
@@ -279,7 +279,7 @@ ul.ham-menu{
     color: #F0EBD8;
 }
 
-.ham-menu li.pli:hover .plus, .ham-menu li.pli:hover .plus::after{
+.ham-menu li.pli:hover .plus, .ham-menu li.pli:hover .minus{
     background-color: #F0EBD8;
 }
 
@@ -287,7 +287,7 @@ ul.ham-menu{
     cursor: pointer;
 }
 
-.ham-menu .plus, .ham-menu .plus::after{
+.ham-menu .plus, .ham-menu .minus{
     content: "";
     display: inline-block;
     width: 20px;
@@ -296,24 +296,11 @@ ul.ham-menu{
     transition: .5s;
     cursor: pointer;
     float: right;
-    transform: translate(-30px, -32px);
+    transform: translate(-10px, -30px);
 }
 
-.ham-menu .plus::after{
-    transform: rotate(90deg);
-}
-
-/* ---hamburger 按鈕關閉動畫--- */
-.ham_b:hover::before{
-    transform: translateY(12px) rotate(135deg);
-}
-
-.ham_b:hover::after{
-    transform: translateY(-5px) rotate(-135deg);
-}
-
-.ham_b:hover .inner{
-    transform: scale(0);
+.ham-menu .minus{
+    transform: rotate(90deg) translate(-30px, -10px);
 }
 
 /* --------- Header Mediaquery----------- */
@@ -349,6 +336,7 @@ ul.ham-menu{
 footer{
     background-color: #26273B;
     padding: 60px 0;
+    width: 100%;
 }
 
 footer nav{
@@ -440,6 +428,7 @@ footer .arrow{
     width: 20px;
     vertical-align: middle;
     margin-left: 20px;
+    transition: .3s;
 }
 
 
@@ -453,6 +442,12 @@ footer .arrow{
         /* align-items: center; */
     }
 
+    footer .ftitle{
+        padding-bottom: 15px;
+        cursor: pointer;
+        /* border: 1px solid pink; */
+    }
+
     footer .ftitle>h5{
         margin-top: 20px;
     }
@@ -462,12 +457,8 @@ footer .arrow{
     }
 
     footer .underline{
-        display: block;
         width: 100%;
-        height: 1px;
-        background-color: #748cab;
-        margin-top: 15px;
-        margin-bottom: 45px;
+        margin-top: 0;
     }
 
     footer ul{
@@ -477,9 +468,8 @@ footer .arrow{
     footer .icon{
         display: flex;
         justify-content: space-around;
+        margin: 30px 0 60px;
     }
-
-    
     
     footer .icon img{
         margin-right: 0;

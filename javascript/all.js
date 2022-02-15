@@ -1,27 +1,67 @@
 "use strict";
 
-// Hamburger
+// ------ Hamburger ------
 let ham_b = document.querySelector("div.ham_b");
 ham_b.addEventListener("click", function(){
     let ham_menu = document.querySelector("ul.ham-menu");
+    let ham_b1 = document.querySelector("span.hb_1");
+    let ham_b2 = document.querySelector("span.hb_2");
+    let ham_b3 = document.querySelector("span.hb_3");
+    
     if(ham_menu.classList.contains("noshow")){
         ham_menu.classList.remove("noshow");
+
+        ham_b1.setAttribute("style", "transform: translateY(11px) rotate(135deg);");
+        ham_b2.setAttribute("style", "transform: scale(0);");
+        ham_b3.setAttribute("style", "transform: translateY(-5px) rotate(-135deg);");
     }else{
         ham_menu.classList.add("noshow");
+        ham_b1.setAttribute("style", "transform: none;");
+        ham_b2.setAttribute("style", "transform: none;");
+        ham_b3.setAttribute("style", "transform: none;");
     };
+    // ham_menu.classList.toggle("noshow");
     
 });
 
 let product_li = document.querySelector("li.pli");
 product_li.addEventListener("click", function(){
     let p_subsel = document.querySelector("ol.ham_subsel");
+    let p_title = document.querySelector(".pli a");
+    let plus = document.querySelector("span.plus");
+    let minus = document.querySelector("span.minus");
+
     if(p_subsel.classList.contains("noshow")){
         p_subsel.classList.remove("noshow");
+        p_title.setAttribute("style", "color: #F0EBD8;")
+        plus.setAttribute("style", "background-color: #F0EBD8;")
+        minus.setAttribute("style", "opacity: 0;");
     }else{
         p_subsel.classList.add("noshow");
+        p_title.setAttribute("style", "color: #C4A87E;")
+        plus.setAttribute("style", "background-color: #C4A87E;")
+        minus.setAttribute("style", "opacity: 1;")
     };
-    
+
+    // p_subsel.classList.toggle("noshow");
 });
+
+// ------ Footer RWD ------
+let ftitle = document.getElementsByClassName("ftitle");
+for(let i = 0; i < ftitle.length; i++){
+    let fsub = document.getElementsByClassName("fsub");
+    let farrow = document.getElementsByClassName("arrow");
+    ftitle[i].addEventListener("click", function(){
+        if(fsub[i].style.display = "none"){
+            fsub[i].style.display = "block";
+            farrow[i].style.transform = "rotate(180deg)";
+        }else{
+            // fsub[i].style.display = "none";
+            fsub[i].setAttribute("style", "display: none");
+            console.log("none");
+        }
+    });
+}
 
 
 // ----- Scroll 事件: 動畫 active-------
@@ -37,7 +77,6 @@ function scroll(element){
     // console.log("高度/3: " + (element.offsetHeight/3))
     // console.log("頂部位置: " + element.offsetTop)   
     }); 
-    
 }
 
 let slidein = document.getElementsByClassName("slidein");
