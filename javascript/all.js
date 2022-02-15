@@ -9,22 +9,6 @@ ham_b.addEventListener("click", function(){
     let ham_b3 = document.querySelector("span.hb_3");
 
     let ham_subsel = document.querySelector("ol.ham_subsel");
-    
-    // if(ham_menu.classList.contains("noshow")){
-    //     ham_menu.classList.remove("noshow");
-    //     ham_menu.classList.add("menuactive");
-
-    //     ham_b1.setAttribute("style", "transform: translateY(11px) rotate(135deg);");
-    //     ham_b2.setAttribute("style", "transform: scale(0);");
-    //     ham_b3.setAttribute("style", "transform: translateY(-5px) rotate(-135deg);");
-
-    //     ham_subsel.setAttribute("style", "opacity: 1;");
-    // }else{
-    //     ham_menu.classList.add("noshow");
-    //     ham_b1.setAttribute("style", "transform: none;");
-    //     ham_b2.setAttribute("style", "transform: none;");
-    //     ham_b3.setAttribute("style", "transform: none;");
-    // };
 
     if(ham_menu.classList.contains("menuactive")){
         ham_menu.classList.remove("menuactive");
@@ -113,6 +97,7 @@ let shrink = document.getElementsByClassName("shrink");
 for(let i = 0; i < shrink.length; i++){
     scroll(shrink[i]);
 }
+
 
 //-----------[index]-----------------
 /*

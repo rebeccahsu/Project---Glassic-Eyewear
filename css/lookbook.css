@@ -53,27 +53,29 @@ main>section{
     display: flex;
     position: absolute;
     top: 0;
-    left: -135px;
+    left: 0px;
     
-    animation: marqee 140s linear 1;
+    animation: marquee 10s linear 1;
 }
 
 .pics li{
     margin: 0 2px;
-    /* animation: marqee 50s linear 5s 1; */
+    /* animation: marquee 50s linear 1; */
 }
 
-@keyframes marqee{
+@keyframes marquee{
     0% {
-     left: 0;
-     transform: translateX(0%);
+        left: 0;
     }
    
     100% {
-     left: 0;
-     transform: translateX(-100%);
+        left: -2720px;
     }
 }
+
+/* .pics ul:hover{
+    animation-play-state: paused;
+} */
 
 /* ---- Instagram ---- */
 .ig{

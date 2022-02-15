@@ -569,3 +569,13 @@ footer .arrow{
     opacity: 1;
     transform: scale(1);
 }
+
+.upwards{
+    opacity: 0;
+    transform: translateY(30%);
+}
+
+.upwards.active{
+    opacity: 1;
+    transform: translateY(0%);
+}

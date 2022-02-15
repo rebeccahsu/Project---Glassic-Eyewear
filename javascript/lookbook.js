@@ -1,22 +1,22 @@
 //-----------[lookbook]-------------------
 //marqee
-var ul_marqee = document.getElementsByClassName("marqeepics")[0];
-console.log(ul_marqee);
-console.log(typeof(ul_marqee));
-console.log(ul_marqee.innerHTML);
+let ul_marquee = document.querySelector("ul.marqueepics");
+console.log(ul_marquee);
+console.log(typeof(ul_marquee));
+console.log(ul_marquee.innerHTML);
 
-var arr_marqee = [ul_marqee.innerHTML];
-console.log(arr_marqee);
-arr_marqee.push(ul_marqee.innerHTML);
+let arr_marquee = [ul_marquee.innerHTML];
+console.log(arr_marquee);
+arr_marquee.push(ul_marquee.innerHTML);
+
+let li_marquee = document.getElementsByClassName("mpic")[0];
 
 
-setInterval(function(){
-    arr_marqee.push(ul_marqee.innerHTML);
-    ul_marqee.insertAdjacentHTML("beforeend", arr_marqee[1]);
-    console.log("10s");
-  }, 10000);
+// setInterval(function(){
+//     // arr_marqee.push(ul_marqee.innerHTML);
+//     ul_marquee.insertAdjacentHTML("beforeend", ul_marquee.innerHTML);
+//   }, 3000);
 
-setInterval(function(){
-    arr_marqee.shift();
-    console.log("shift");
-}, 20000);
+// setInterval(function(){
+//     ul_marqee.removeChild(li_marqee);
+// }, 6000);

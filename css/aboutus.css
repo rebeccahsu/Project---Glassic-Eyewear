@@ -11,6 +11,10 @@ main .content{
     position: relative;
 }
 
+main img{
+    width: 50%;
+}
+
 main .cms{
     padding-left: 90px;
 }
