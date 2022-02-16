@@ -12,13 +12,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <!-- Main-sel -->
         <nav class="main-sel wrapper">
-            <h1><a href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
+            <h1><a class="logo" href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
             <ul>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a class="currentpage" href="#">PRODUCTS</a>
+                <li><a class="currentpage" href="eyeglasses.html">PRODUCTS</a>
                 
                 <!-- Sub-sel -->
                     <ol>
@@ -39,22 +39,22 @@
             <div class="ham-nav">
                 <h1><a class="hamlogo" href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
                 <div class="ham_b">
-                    <span class="hb_1"></span>
-                    <span class="hb_2"></span>
-                    <span class="hb_3"></span>
+                    <span class="hbtn hb_1"></span>
+                    <span class="hbtn hb_2"></span>
+                    <span class="hbtn hb_3"></span>
                 </div>
             </div>
-            <ul class="ham-menu noshow">
+            <ul class="ham-menu">
                     <li><a href="aboutus.html">ABOUT US</a></li>
                     <li class="pli">
                         <a>PRODUCTS</a>
-                        <span class="plus"></span>
-                        <span class="minus"></span>  
+                        <span class="plus horizontal"></span>
+                        <span class="minus vertical"></span>     
                     </li>
 
                     <!-- Sub-sel -->
-                    <ol class="ham_subsel noshow">
-                        <li><a href="eyeglasses.html">EYEGLASSES</a></li>
+                    <ol class="ham_subsel">
+                        <li><a class="currentpage" href="eyeglasses.html">EYEGLASSES</a></li>
                         <li><a href="sunglasses.html">SUNGLASSES</a></li>
                     </ol>
 
@@ -103,18 +103,18 @@
                 <a class="viewMore valeft" href="eyeglasses_jonesm.html">View All</a>
             </div>
             <div class="ec-pic slidein rtl">
-                <img class="emodel varight" src="img/eyeglasses/ecollect2.png" alt="">
-                <span class="decblock fdec2"></span>
-                <img class="frame fr2" src="img/eyeglasses/eframe2.png" alt="">
+                <img class="emodel varight slidein rtl" src="img/eyeglasses/ecollect2.png" alt="">
+                <span class="decblock fdec2 slidein rtl"></span>
+                <img class="frame fr2 slidein rtl" src="img/eyeglasses/eframe2.png" alt="">
             </div>
         </section>
 
         <!-- Collection 3-->
         <section class="ec3">
             <div class="ec-pic slidein ltr">
-                <img class="emodel" src="img/eyeglasses/ecollect3.png" alt="">
-                <span class="decblock fdec3"></span>
-                <img class="frame fr3" src="img/eyeglasses/eframe3.png" alt="">
+                <img class="emodel slidein ltr" src="img/eyeglasses/ecollect3.png" alt="">
+                <span class="decblock fdec3 slidein ltr"></span>
+                <img class="frame fr3 slidein ltr" src="img/eyeglasses/eframe3.png" alt="">
             </div>
 
             <div class="ec-content fadein">
@@ -137,27 +137,36 @@
     <footer>
         <nav class="wrapper">
             <div class="products">
-                <h5>Products</h5>
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="eyeglasses.html">Eyeglasses</a></li>
                     <li><a href="sunglasses.html">Sunglasses</a></li>
                     <li><a href="#">Search</a></li>
                 </ul>
             </div>
             <div class="company">
-                <h5>Company</h5>
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="aboutus.html".html">About our brand</a></li>
                     <li><a href="stores.html">Stores</a></li>
                     <li><a href="#">Recruit</a></li>
                 </ul>
             </div>
-            <div class="products">
-                <h5>Support</h5>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -179,7 +188,8 @@
         </nav>
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="javascript/all.js"></script>
 </body>
 </html>

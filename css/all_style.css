@@ -224,6 +224,12 @@ div.ham-nav .hamlogo img{
     padding: 3px;
 }
 
+.ham_b{
+    float: right;
+    cursor: pointer;
+    padding: 9px 15px;
+}
+
 .ham_b .hb_1, .ham_b .hb_2, .ham_b .hb_3{
     content: "";
     background-color: #C4A87E;
@@ -233,12 +239,19 @@ div.ham-nav .hamlogo img{
     border-radius: 3px;
     margin: 7px 0;
     transition: .5s;
+    /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
 
-.ham_b{
-    float: right;
-    cursor: pointer;
-    padding: 9px 15px;
+.ham_b .hb_1.active{
+    transform: translateY(11px) rotate(135deg);
+}
+
+.ham_b .hb_2.active{
+    transform: scale(0);
+}
+
+.ham_b .hb_3.active{
+    transform: translateY(-5px) rotate(-135deg);
 }
 
 ul.ham-menu{
@@ -257,7 +270,7 @@ ul.ham-menu{
     transform: translateX(120%);
 }
 
-ul.ham-menu.menuactive{
+ul.ham-menu.active{
     opacity: 1;
     transform: translateX(0%); 
 }
@@ -285,7 +298,8 @@ ul.ham-menu.menuactive{
     color: #F0EBD8;
 }
 
-.ham-menu li.pli:hover .plus, .ham-menu li.pli:hover .minus{
+
+.ham-menu li.pli:hover .horizontal, .ham-menu li.pli:hover .vertical{
     background-color: #F0EBD8;
 }
 
@@ -293,7 +307,7 @@ ul.ham-menu.menuactive{
     cursor: pointer;
 }
 
-.ham-menu .plus, .ham-menu .minus{
+.ham-menu .horizontal, .ham-menu .vertical{
     content: "";
     display: inline-block;
     width: 20px;
@@ -305,12 +319,18 @@ ul.ham-menu.menuactive{
     transform: translate(-10px, -30px);
 }
 
-.ham-menu .minus{
+.ham-menu .vertical{
     transform: rotate(90deg) translate(-30px, -10px);
 }
 
+.ham-menu .vertical.active{
+    transform: rotate(0deg) translate(-30px, -10px) scale(0);
+}
+
+
 ol.ham_subsel{
     animation: subsel .5s linear 1;
+    display: none;
 }
 
 
@@ -493,6 +513,7 @@ footer .arrow{
 
     footer .ftitle>h5{
         margin-top: 20px;
+        transition: .3s;
     }
 
     footer .arrow{
@@ -504,8 +525,12 @@ footer .arrow{
         margin-top: 0;
     }
 
-    footer ul{
-        display: none;
+    footer ul.fsub{
+        /* display: none; */
+        max-height: 0px;  
+        overflow: hidden;
+        transition: .5s;
+        /* border: 1px solid red; */
     }
 
     footer .icon{

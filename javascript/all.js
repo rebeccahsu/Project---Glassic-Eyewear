@@ -4,49 +4,31 @@
 let ham_b = document.querySelector("div.ham_b");
 ham_b.addEventListener("click", function(){
     let ham_menu = document.querySelector("ul.ham-menu");
-    let ham_b1 = document.querySelector("span.hb_1");
-    let ham_b2 = document.querySelector("span.hb_2");
-    let ham_b3 = document.querySelector("span.hb_3");
-
-    let ham_subsel = document.querySelector("ol.ham_subsel");
-
-    if(ham_menu.classList.contains("menuactive")){
-        ham_menu.classList.remove("menuactive");
-
-        ham_b1.setAttribute("style", "transform: none;");
-        ham_b2.setAttribute("style", "transform: none;");
-        ham_b3.setAttribute("style", "transform: none;");
-    }else{
-        ham_menu.classList.add("menuactive");
-        ham_b1.setAttribute("style", "transform: translateY(11px) rotate(135deg);");
-        ham_b2.setAttribute("style", "transform: scale(0);");
-        ham_b3.setAttribute("style", "transform: translateY(-5px) rotate(-135deg);");
-    };
-    // ham_menu.classList.toggle("noshow");
+    let hbtns = document.querySelectorAll(".hbtn");
+    ham_menu.classList.toggle("active");
+    hbtns.forEach(function(hbtn){
+        hbtn.classList.toggle("active");
+      });
     
 });
 
-let product_li = document.querySelector("li.pli");
-product_li.addEventListener("click", function(){
-    let p_subsel = document.querySelector("ol.ham_subsel");
-    let p_title = document.querySelector(".pli a");
-    let plus = document.querySelector("span.plus");
-    let minus = document.querySelector("span.minus");
+let p_subsel = document.querySelector("ol.ham_subsel");
 
-    if(p_subsel.classList.contains("noshow")){
-        p_subsel.classList.remove("noshow");
-        p_title.setAttribute("style", "color: #F0EBD8;")
-        plus.setAttribute("style", "background-color: #F0EBD8;")
-        minus.setAttribute("style", "opacity: 0;");
-    }else{
-        p_subsel.classList.add("noshow");
-        p_title.setAttribute("style", "color: #C4A87E;")
-        plus.setAttribute("style", "background-color: #C4A87E;")
-        minus.setAttribute("style", "opacity: 1;")
-    };
-
-    // p_subsel.classList.toggle("noshow");
+$("li.pli").on("click", function(){
+    $("ol.ham_subsel").slideToggle();
 });
+
+
+let pli_btn = document.querySelector("li.pli");
+pli_btn.addEventListener("click", function(){
+    let p_vertical = document.querySelector("span.vertical");
+    p_vertical.classList.toggle("active");
+    let p_horizontal = document.querySelector("span.horizontal");
+    p_horizontal.classList.toggle("active");
+    let p_title = document.querySelector(".pli a");
+    p_title.classList.toggle("currentpage");
+});
+
 
 // ------ Footer RWD ------
 let ftitle = document.getElementsByClassName("ftitle");
@@ -54,109 +36,79 @@ for(let i = 0; i < ftitle.length; i++){
     let fsub = document.getElementsByClassName("fsub");
     let farrow = document.getElementsByClassName("arrow");
     ftitle[i].addEventListener("click", function(){
-        if(fsub[i].style.display = "none"){
-            fsub[i].style.display = "block";
+        
+        // if(fsub[i].style.display == ""){
+        //     console.log("1");
+        //     fsub[i].style.display = "block";
+        //     farrow[i].style.transform = "rotate(180deg)";
+        // }else{
+        //     console.log("2");
+        //     // fsub[i].style.display = "none";
+        //     fsub[i].setAttribute("style", "display: none");
+        //     console.log("close");
+        // }
+
+        let fmenu_name = document.getElementsByClassName("fmenu_name");
+        if(fsub[i].style.maxHeight == ""){
+            fsub[i].style.maxHeight = fsub[i].scrollHeight + "px"; // 設定 CSS：max-height
             farrow[i].style.transform = "rotate(180deg)";
         }else{
-            // fsub[i].style.display = "none";
-            fsub[i].setAttribute("style", "display: none");
-            console.log("none");
+            fsub[i].style.maxHeight = ""; // 移除 CSS： max-height
+            farrow[i].style.transform = "rotate(0deg)";
         }
+        fmenu_name[i].classList.toggle("currentpage");
     });
 }
 
 
 // ----- Scroll 事件: 動畫 active-------
-function scroll(element){
+
+// function scroll(element){
+//     window.addEventListener("scroll", function(){
+//     if( ((this.scrollY + this.innerHeight) - element.offsetHeight / 3) > element.offsetTop){
+//             // console.log("here");
+//             element.classList.add("active");
+//         }else{
+//             element.classList.remove("active");
+//         };
+//     // console.log(window.scrollY + window.innerHeight)
+//     // console.log("高度/3: " + (element.offsetHeight/3))
+//     // console.log("頂部位置: " + element.offsetTop)   
+//     }); 
+// }
+
     window.addEventListener("scroll", function(){
-    if( ((this.scrollY + this.innerHeight) - element.offsetHeight / 3) > element.offsetTop){
-            // console.log("here");
-            element.classList.add("active");
-        }else{
-            element.classList.remove("active");
-        };
-    // console.log(window.scrollY + window.innerHeight)
-    // console.log("高度/3: " + (element.offsetHeight/3))
-    // console.log("頂部位置: " + element.offsetTop)   
-    }); 
-}
-
-let slidein = document.getElementsByClassName("slidein");
-for(let i = 0; i < slidein.length; i++){
-    scroll(slidein[i]);
-}
-console.log(slidein[3]);
-console.log(slidein[4]);
-
-let fadein = document.getElementsByClassName("fadein");
-for(let i = 0; i < fadein.length; i++){
-    scroll(fadein[i]);
-}
-
-let shrink = document.getElementsByClassName("shrink");
-for(let i = 0; i < shrink.length; i++){
-    scroll(shrink[i]);
-}
-
-
-//-----------[index]-----------------
-/*
-let bctext = document.querySelector("div.bc-text");
-scroll(bctext);
-
-let ncard = document.querySelectorAll("div.n-card");
-ncard.forEach(function(item, index){
-    scroll(item);
-});
-*/
-
-//-----------[About us]-----------------
-
-
-/*let bc_content = document.querySelector("div.cbc");
-let bc_img = document.getElementById("bcimg");
-scroll(bc_content);
-scroll(bc_img);
-
-let cms_content = document.querySelector("div.cms");
-let cms_img = document.getElementById("cmsimg");
-scroll(cms_content);
-scroll(cms_img);
-
-
-let fd_content = document.querySelector("div.cfd");
-let fd_img = document.getElementById("fdimg");
-scroll(fd_content);
-scroll(fd_img);
-*/
-
-//-----------[Eyeglasses]-----------------
-// let emodels = document.querySelectorAll("img.emodel");
-// for(let i = 0; i < emodels.length; i++){
-//     scroll(emodels[i]);
-// };
-// let emodel = document.querySelector("img.emodel");
-// scroll(emodel);
-
-// //-----------[lookbook]-------------------
-// //marqee
-// var ul_marqee = document.getElementsByClassName("marqeepics")[0];
-// console.log(ul_marqee);
-// console.log(typeof(ul_marqee));
-// console.log(ul_marqee.innerHTML);
-
-// var arr_marqee = [ul_marqee.innerHTML];
-// console.log(arr_marqee);
-// arr_marqee.push(ul_marqee.innerHTML);
-
-
-// setInterval(function(){
-//     arr_marqee.push(ul_marqee.innerHTML);
-//     ul_marqee.insertAdjacentHTML("beforeend", arr_marqee[1]);
-//     console.log("10s");
-//   }, 10000);
-
-// setInterval(function(){
-//     arr_marqee.shift();
-//     console.log("shift");
-// }, 20000);
+        let slidein = document.getElementsByClassName("slidein");
+        for(let i = 0; i < slidein.length; i++){
+            if( ((this.scrollY + this.innerHeight) - slidein[i].offsetHeight / 3) > slidein[i].offsetTop){
+                    // console.log("here");
+                
+                slidein[i].classList.add("active");
+            }else{
+                slidein[i].classList.remove("active");
+            };
+        }
+    
+        let fadein = document.getElementsByClassName("fadein");
+        for(let i = 0; i < fadein.length; i++){
+            if( ((this.scrollY + this.innerHeight) - fadein[i].offsetHeight / 3) > fadein[i].offsetTop){
+                // console.log("here");
+            
+                fadein[i].classList.add("active");
+            }else{
+                fadein[i].classList.remove("active");
+            };
+        }
+    
+        let shrink = document.getElementsByClassName("shrink");
+        for(let i = 0; i < shrink.length; i++){
+            if( ((this.scrollY + this.innerHeight) - shrink[i].offsetHeight / 3) > shrink[i].offsetTop){
+                // console.log("here");
+            
+                shrink[i].classList.add("active");
+            }else{
+                shrink[i].classList.remove("active");
+            };
+        }
+        
+    });

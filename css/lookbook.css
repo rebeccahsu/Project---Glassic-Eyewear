@@ -48,28 +48,37 @@ main>section{
     position: relative;
     margin-bottom: 150px;
 }
-
-.pics ul{
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    
-    animation: marquee 10s linear 1;
+.marqueepics-box{
+    position: relative;
+    height: 100%;
+    display: inline-block;
 }
 
-.pics li{
+.marqueepics{
+    display: flex;
+    position: relative;
+    transform: translateX(0);
+    
+    animation: marquee 20s linear infinite;
+}
+.marqueepics.-fake{
+    left:-100%;
+    position: absolute;
+    top: 0;
+}
+
+.mpic{
     margin: 0 2px;
     /* animation: marquee 50s linear 1; */
 }
 
 @keyframes marquee{
     0% {
-        left: 0;
+        transform: translateX(0);
     }
    
     100% {
-        left: -2720px;
+        transform: translateX(100%);
     }
 }
 

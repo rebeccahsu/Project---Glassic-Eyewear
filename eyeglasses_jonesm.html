@@ -12,13 +12,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <!-- Main-sel -->
         <nav class="main-sel wrapper">
-            <h1><a href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
+            <h1><a class="logo" href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
             <ul>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a class="currentpage" href="#">PRODUCTS</a>
+                <li><a class="currentpage" href="eyeglasses.html">PRODUCTS</a>
                 
                 <!-- Sub-sel -->
                     <ol>
@@ -39,21 +39,21 @@
             <div class="ham-nav">
                 <h1><a class="hamlogo" href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
                 <div class="ham_b">
-                    <span class="hb_1"></span>
-                    <span class="hb_2"></span>
-                    <span class="hb_3"></span>  
+                    <span class="hbtn hb_1"></span>
+                    <span class="hbtn hb_2"></span>
+                    <span class="hbtn hb_3"></span>
                 </div>
             </div>
-            <ul class="ham-menu noshow">
+            <ul class="ham-menu">
                     <li><a href="aboutus.html">ABOUT US</a></li>
                     <li class="pli">
                         <a>PRODUCTS</a>
-                        <span class="plus"></span>
-                        <span class="minus"></span>
+                        <span class="plus horizontal"></span>
+                        <span class="minus vertical"></span>     
                     </li>
 
                     <!-- Sub-sel -->
-                    <ol class="ham_subsel noshow">
+                    <ol class="ham_subsel">
                         <li><a href="eyeglasses.html">EYEGLASSES</a></li>
                         <li><a href="sunglasses.html">SUNGLASSES</a></li>
                     </ol>
@@ -174,27 +174,36 @@
     <footer>
         <nav class="wrapper">
             <div class="products">
-                <h5>Products</h5>
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="eyeglasses.html">Eyeglasses</a></li>
                     <li><a href="sunglasses.html">Sunglasses</a></li>
                     <li><a href="#">Search</a></li>
                 </ul>
             </div>
             <div class="company">
-                <h5>Company</h5>
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="aboutus.html".html">About our brand</a></li>
                     <li><a href="stores.html">Stores</a></li>
                     <li><a href="#">Recruit</a></li>
                 </ul>
             </div>
-            <div class="products">
-                <h5>Support</h5>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/downarrow.png" alt="">
+                </div>
                 <span class="underline"></span>
-                <ul>
+                <ul class="fsub">
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
@@ -217,6 +226,7 @@
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="javascript/items.js"></script>
 </body>
 </html>

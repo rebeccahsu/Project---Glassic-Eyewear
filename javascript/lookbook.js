@@ -1,22 +1,43 @@
 //-----------[lookbook]-------------------
-//marqee
-let ul_marquee = document.querySelector("ul.marqueepics");
-console.log(ul_marquee);
-console.log(typeof(ul_marquee));
-console.log(ul_marquee.innerHTML);
+//marquee
+let ul_pics = document.querySelector("ul.marqueepics");
+console.log(ul_pics);
+console.log(ul_pics.innerHTML);
 
-let arr_marquee = [ul_marquee.innerHTML];
-console.log(arr_marquee);
-arr_marquee.push(ul_marquee.innerHTML);
+let arr_pics = [ul_pics.innerHTML];
+console.log(arr_pics);
+// arr_pics.push(ul_pics.innerHTML);
+// console.log(arr_pics);
 
-let li_marquee = document.getElementsByClassName("mpic")[0];
+let li_pic = document.getElementsByClassName("mpic")[0];
 
+
+
+setInterval(function(){
+    arr_pics.push(ul_pics.innerHTML);
+    console.log("add");
+    console.log(arr_pics);
+    // ul_pics.insertAdjacentHTML("beforeend", ul_pics.innerHTML);
+  }, 3000);
+
+setInterval(function(){
+    arr_pics.shift(ul_pics.innerHTML);
+    console.log("delete");
+    console.log(arr_pics);
+    // ul_pics.removeChild(li_pic);
+}, 6000);
+
+console.log(arr_pics);
+// ul_pics.insertAdjacentHTML("afterbegin", arr_pics.innerHTML);
 
 // setInterval(function(){
-//     // arr_marqee.push(ul_marqee.innerHTML);
-//     ul_marquee.insertAdjacentHTML("beforeend", ul_marquee.innerHTML);
+//     arr_pics.push(li_pic.innerHTML);
+//     console.log("add");
+//     // ul_pics.insertAdjacentHTML("beforeend", ul_pics.innerHTML);
 //   }, 3000);
 
 // setInterval(function(){
-//     ul_marqee.removeChild(li_marqee);
+//     arr_pics.shift(ul_pics.innerHTML);
+//     console.log("delete");
+//     // ul_pics.removeChild(li_pic);
 // }, 6000);
