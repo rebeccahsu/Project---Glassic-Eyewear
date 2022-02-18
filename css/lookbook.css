@@ -5,8 +5,12 @@ main{
     position: relative;
 }
 
+/* .wrapper{
+    padding: 0;
+} */
+
 main>section{
-    width: 500px;
+    width: 50%;
     margin-bottom: 140px;
 }
 
@@ -23,6 +27,10 @@ main>section{
     margin-bottom: 100px;
 }
 
+.right{
+    padding-left: 35px;
+}
+
 .decblock{
     display: block;
     background-color: #F0EBD8;
@@ -34,20 +42,47 @@ main>section{
     z-index: -1;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px){
+    .look-pic{
+        width: 100%;
+    }
+
+    section.right h3{
+        font-size: 40px;
+    }
+
+    .right .t1{
+        margin: 30px 0 3px 0;
+    }
+    
+    .right .t2{
+        margin-bottom: 60px;
+    }
+
+    .decblock{
+        width: 100%;
+        height: 180px;
+        top: 420px;
+        left: 0;
+    }
+}
+
 /* ---- 跑馬燈---- */
 .lbcontainer{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 .pics{
-    height: 300px;
+    /* height: 300px; */
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     margin-bottom: 150px;
 }
+
 .marqueepics-box{
     position: relative;
     height: 100%;
@@ -57,34 +92,33 @@ main>section{
 .marqueepics{
     display: flex;
     position: relative;
-    transform: translateX(0);
+    /* transform: translateX(0); */
     
-    animation: marquee 20s linear infinite;
+    animation: marquee 50s linear infinite;
 }
 .marqueepics.-fake{
-    left:-100%;
+    left: -100%;
     position: absolute;
     top: 0;
 }
 
-.mpic{
+li.mpic{
     margin: 0 2px;
-    /* animation: marquee 50s linear 1; */
 }
 
 @keyframes marquee{
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
    
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
-/* .pics ul:hover{
-    animation-play-state: paused;
-} */
+@media (min-width: 576px) and (max-width: 767.98px){
+
+}
 
 /* ---- Instagram ---- */
 .ig{
@@ -107,10 +141,14 @@ main>section{
     width: 300px;
     height: 300px;
     margin: 15px;
-    display: flex;
 }
 
-.ig a{
+.ig li img{
+    position: relative;
+    width: 100%;
+}
+
+.ig a.igaccount{
     width: 100%;
     text-align: center;
     line-height: 300px;
@@ -118,33 +156,27 @@ main>section{
     background-color: rgba(51, 51, 51, 0.596);
     opacity: 0;
     transition: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.ig .ig1{
-    background-image: url("../img/lookbook/ig1.png");
-}
-
-.ig .ig2{
-    background-image: url("../img/lookbook/ig2.png");
-}
-
-.ig .ig3{
-    background-image: url("../img/lookbook/ig3.png");
-}
-
-.ig .ig4{
-    background-image: url("../img/lookbook/ig4.png");
-}
-
-.ig .ig5{
-    background-image: url("../img/lookbook/ig5.png");
-}
-
-.ig .ig6{
-    background-image: url("../img/lookbook/ig6.png");
-}
-
-.ig li:hover a{
+.ig li:hover a.igaccount{
     opacity: 1;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px){
+    .ig ul{
+        justify-content: space-evenly;
+    }
+
+    .ig li{
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .ig a.igaccount{
+        line-height: 250px;
+    }
+}

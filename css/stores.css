@@ -56,3 +56,33 @@ iframe{
 .map-text p{
     margin-bottom: 50px;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .tab>ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .tab>ul li img{
+        width: 100%;
+    }
+
+    .map{
+        flex-direction: column;
+    }
+
+    .map-text{
+        order: 1;
+        margin: 20px 50px;
+    }
+
+
+    iframe{
+        width: 90%;
+        margin: 0 auto;
+        height: 200px;
+        order: 2;
+    }
+}

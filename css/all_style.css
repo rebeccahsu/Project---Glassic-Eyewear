@@ -54,6 +54,7 @@ a{
     width: 1104px;
     margin: 0 auto;
     padding: 0 15px;
+    /* overflow: hidden; */
 }
 
 .viewMore{
@@ -382,6 +383,8 @@ ol.ham_subsel{
 .top{
     margin: 65px auto 100px;
     position: relative;
+    /* padding: 0 15px; */
+    width: 1104px;
 }
 
 .top h2{
@@ -393,6 +396,29 @@ ol.ham_subsel{
 
 .top img{
     padding-top: 120px;
+    width: 100%;
+}
+
+@media (max-width: 767.98px){
+    .top{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+
+    .top h2{
+        font-size: 90px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .top img{
+        padding-top: 90px;
+        min-width: 100%;
+        min-height: 100%;
+        /* transform: translateX(-40%); */
+    }
 }
 
 /* ------- Footer ------- */

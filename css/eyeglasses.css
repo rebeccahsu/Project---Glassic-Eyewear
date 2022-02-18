@@ -8,21 +8,21 @@ main>section{
     padding: 0 80px 140px;
 }
 
-.ec-pic{
+div.ec-pic{
     width: 50%;
     position: relative;
     font-size: 0;
 }
 
-.ec-content{
+div.ec-content{
     width: 50%;
 }
 
-.ec-content h3{
+div.ec-content h3{
     padding: 20px 0;
 }
 
-.ec-content p{
+div.ec-content p{
     padding: 30px 0 50px 0;
 }
 
@@ -64,11 +64,6 @@ main>section{
     background-color: #26273B;
 }
 
-/* .fdec3{
-    top: 285px;
-    left: 228px;
-} */
-
 .varight{
     float: right;
 }
@@ -95,4 +90,60 @@ main a:hover{
     border-bottom: 5px solid #748CAB;
     color: #748CAB;
     cursor: pointer;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    main>section{
+        flex-direction: column;
+        /* align-items: center; */
+        padding: 0 40px 140px;
+    }
+    
+    .fr2{
+        top: 320px;
+        left: -45px;
+    }
+    
+    .fdec2{
+        top: 325px;
+        left: 0px;
+        background-color: #26273B;
+    }
+
+    div.ec-pic{
+        width: 350px;
+        align-self: center;
+    }
+
+    div.ec-pic .emodel2{
+        margin-left: 45px;
+    }
+
+    div.ec-content{
+        width: 90%;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    div.ec-content h3{
+        text-align: center;
+    }
+
+    div.ec-content p{
+        padding: 30px 0 20px 0;
+    }
+
+    .varight, .valeft{
+        float: none;
+
+    }
+
+    div.ecc2{
+        order: 4;
+    }
+
+    div.ecp2{
+        order: 3;
+    }
+
 }
