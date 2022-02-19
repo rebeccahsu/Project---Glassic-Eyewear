@@ -413,6 +413,10 @@ ol.ham_subsel{
     width: 1104px;
 }
 
+@media screen and (max-width: 575.98px){
+
+}
+
 @media (min-width: 576px) and (max-width: 767.98px){
     .top{
         width: 100%;
@@ -606,6 +610,10 @@ footer .arrow{
         display: inline;
         margin-right: 20px;
         margin-bottom: 50px;
+    }
+
+    footer .newsletter input.the_text{
+        margin-bottom: 20px;
     }
 }
 

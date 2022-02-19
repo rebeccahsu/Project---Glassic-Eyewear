@@ -71,7 +71,6 @@
 
 /* ---- Overlay ---- */
 .overlay{
-    /* position: absolute; */
     position: fixed;
     left: 50%;
     bottom: 50%;
@@ -99,6 +98,7 @@
 .ocontent{
     margin: 40px 0;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -131,5 +131,23 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
+    .overlay{
+        width: 90%;
+    }
 
+    .otext{
+        margin-left: 5%;
+    }
+
+    .opic{
+        width: 60%;
+        margin-left: 2%;
+        /* border: 1px solid red; */
+    }
+
+    .opic img{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
 }
