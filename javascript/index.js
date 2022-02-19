@@ -5,7 +5,7 @@ header.setAttribute("style", "background-color: rgba(0, 0, 0, 0);")
 
 // ----- Scroll 事件 -------
 window.addEventListener("scroll", function(){
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
 
     // ------ Header ------
     let top_block = document.getElementsByClassName("indextop")[0];

@@ -15,11 +15,19 @@
         height: 500px;
         overflow: hidden;
         /* border: 1px solid red; */
+        position: relative;
+        /* height: auto; */
+        /* padding-top: 10%; */
     }
 
     .indextop img{
         width: 1000px;
-        transform: translateX(-20%);
+        /* width: auto; */
+        /* height: 100%; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -97,51 +105,81 @@
 
     }
 
-    .bc-img{
+    /* .bc-img{
         width: 133%;
         height: 500px;
-        /* border: 1px solid red; */
+        border: 1px solid red;
         transform: scale(0.75);
         order: 2;
         padding: 0 10px;
+    } */
+
+    .bc-img{
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        order: 2;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 100px;
     }
 
-    .bc-img .bc1{
+    /* .bc-img .bc1{
         position: absolute;
         top: 0;
         left: 5%;
         z-index: 0;
         transition: .9s;
-    }
+    } */
+
     
    .bc-img .bc1:hover{
         transform: scale(1.1) translateX(0) translateY(0);
     }
     
     .bc-img .bc1:hover + .bc2{
-        transform: scale(0.9);
+        transform: none;
     }
     
-    .bc-img .bc2{
+    /* .bc-img .bc2{
         position: absolute;
         top: 80px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 3;
         transition: .9s;
+    } */
+
+    .bc-img .bc1, .bc-img .bc2, .bc-img .bc3{
+        position: static;
+        top: 0;
+        left: 0;
+        margin: 5px;
+        width: calc((100% - 20px) / 3);
+        border: 1px solid yellowgreen;
+    }
+
+    .bc-img .bc1, .bc-img .bc3{
+        
     }
     
     .bc-img .bc2:hover{
-        transform: none;
+        transform: scale(1.1);
+    }
+
+    .bc-img .bc3:hover{
+        transform: scale(1.1);
     }
     
-    .bc-img .bc3{
+    /* .bc-img .bc3{
         position: absolute;
         top: 45px;
         left: 65%;
         z-index: 1;
         transition: .9s;
-    }
+    } */
     
     .bc-text{
         order: 1;

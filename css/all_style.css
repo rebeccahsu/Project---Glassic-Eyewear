@@ -383,8 +383,12 @@ ol.ham_subsel{
 .top{
     margin: 65px auto 100px;
     position: relative;
-    /* padding: 0 15px; */
     width: 1104px;
+}
+
+.topspace{
+    height: 120px;
+    position: relative;
 }
 
 .top h2{
@@ -394,17 +398,31 @@ ol.ham_subsel{
     z-index: 2;
 }
 
-.top img{
-    padding-top: 120px;
-    width: 100%;
+.top .view{
+    position: relative;
+    height: 330px;
 }
 
-@media (max-width: 767.98px){
+.top img{
+    margin-top: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 1104px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
     .top{
         width: 100%;
         overflow: hidden;
         position: relative;
         /* border: 1px solid red; */
+    }
+
+    .topspace{
+        height: 80px;
     }
 
     .top h2{
@@ -413,11 +431,22 @@ ol.ham_subsel{
         top: 10px;
     }
 
+    .top .view{
+        width: 100%;
+        height: auto;
+        padding-top: 45%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+        
+        /* margin-top: 80px; */
+    }
+
     .top img{
-        padding-top: 90px;
-        min-width: 100%;
+        width: auto;
         min-height: 100%;
-        /* transform: translateX(-40%); */
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -50%);
     }
 }
 
