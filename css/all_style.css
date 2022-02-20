@@ -113,9 +113,17 @@ img{
 @media (max-width: 767.98px){
     .wrapper{
         width: 100%;
+        overflow: hidden;
     }
     .viewMore{
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    .wrapper{
+        width: 100%;
+        border: 1px solid red;
     }
 }
 
@@ -413,8 +421,38 @@ ol.ham_subsel{
     width: 1104px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (max-width: 575.98px){
+    .top{
+        margin: 65px auto 40px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
 
+    .topspace{
+        height: 60px;
+    }
+
+    .top h2{
+        font-size: 60px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .top .view{
+        width: 100%;
+        height: auto;
+        padding-top: 45%;
+        overflow: hidden;
+    }
+
+    .top img{
+        width: auto;
+        max-height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -50%);
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -452,6 +490,10 @@ ol.ham_subsel{
         top: 50%;
         transform: translate(-60%, -50%);
     }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+
 }
 
 /* ------- Footer ------- */
