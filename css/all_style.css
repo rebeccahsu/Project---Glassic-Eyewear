@@ -22,7 +22,7 @@ h2{
 h3{
     font-size: 50px;
     font-weight: 700;
-    line-height: 57.5px;
+    line-height: 60px;
     letter-spacing: 1.25px;
     color: #748cab;
 }
@@ -67,36 +67,12 @@ a{
     transition: 0.5s;
 }
 
-/* .viewMore::after{
-    content: "";
-    display: none;
-    margin-top: 5px;
-    transform: translateY(5px);
-    background-color: #748CAB;
-    margin: 0 auto;
-    width: 90px;
-    height: 5px;
-} */
-
-
-
 .viewMore:hover{
     border-bottom: 5px solid #748CAB;
     color: #748CAB;
     cursor: pointer;
     /* animation: underline 5s infinite; */
 }
-
-
-/* @keyframes underline{
-    0% {
-        border-bottom: 0px solid #748CAB;
-    }
-    
-    100% {
-        border-bottom: 5px solid #748CAB;
-    }
-} */
 
 img{
     vertical-align: bottom;
@@ -123,7 +99,8 @@ img{
 @media (min-width: 768px) and (max-width: 1199.98px){
     .wrapper{
         width: 100%;
-        border: 1px solid red;
+        overflow: hidden;
+        /* border: 1px solid red; */
     }
 }
 
@@ -421,41 +398,7 @@ ol.ham_subsel{
     width: 1104px;
 }
 
-@media (max-width: 575.98px){
-    .top{
-        margin: 65px auto 40px;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .topspace{
-        height: 60px;
-    }
-
-    .top h2{
-        font-size: 60px;
-        position: absolute;
-        top: 10px;
-    }
-
-    .top .view{
-        width: 100%;
-        height: auto;
-        padding-top: 45%;
-        overflow: hidden;
-    }
-
-    .top img{
-        width: auto;
-        max-height: 100%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-60%, -50%);
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
     .top{
         width: 100%;
         overflow: hidden;
@@ -492,8 +435,46 @@ ol.ham_subsel{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px){
+@media (max-width: 575.98px){
+    .top{
+        margin: 65px auto 40px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
 
+    .topspace{
+        height: 60px;
+    }
+
+    .top h2{
+        font-size: 60px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .top .view{
+        width: 100%;
+        height: auto;
+        padding-top: 45%;
+        overflow: hidden;
+    }
+
+    .top img{
+        width: auto;
+        max-height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -50%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    .top{
+        width: 100%;
+        overflow: hidden;
+        /* border: 1px solid blue; */
+    }
 }
 
 /* ------- Footer ------- */
@@ -536,8 +517,8 @@ footer .icon{
 }
 
 footer .icon img{
-    margin-right: 30px;
-    width: 33px;
+    max-width: 33px;
+    margin: 0 10px;
     transition: .3s;
 }
 
@@ -656,6 +637,7 @@ footer .arrow{
 
     footer .newsletter input.the_text{
         margin-bottom: 20px;
+        min-width: 70%;
     }
 }
 

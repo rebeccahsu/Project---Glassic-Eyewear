@@ -25,11 +25,6 @@ article .ndate>h4{
     color: #C4A87E;   
 }
 
-/* .verticaltext{
-    writing-mode: vertical-lr;
-    color: #C4A87E; 
-} */
-
 article .content{
     width: 400px;
     display: flex;
@@ -76,15 +71,10 @@ article .content .np{
     color: #26273B;
 }
 
+@media (max-width: 575.98px){
 
+}
 
-/* .decblock{
-    display: block;
-    background-color: #F0EBD8;
-    width: 850px;
-    height: 220px;
-    position: absolute;
-    top: 550px;
-    left: -220px;
-    z-index: -1;
-} */
+@media (min-width: 768px) and (max-width: 1199.98px){
+    
+}

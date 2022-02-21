@@ -87,7 +87,7 @@ main a:hover{
     cursor: pointer;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
     main>section{
         flex-direction: column;
         /* align-items: center; */
@@ -157,4 +157,104 @@ main a:hover{
         order: 6;
     }
 
+}
+
+@media (max-width: 575.98px){
+    main>section{
+        flex-direction: column;
+        padding: 50px 20px 80px;
+    }
+
+    div.sc-pic{
+        max-width: 305px;
+        align-self: center;
+    }
+
+    div.sc-pic .smodel{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.sc-content{
+        width: 100%;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    div.sc-content h3{
+        text-align: center;
+    }
+
+    div.sc-content p{
+        padding: 30px 0 10px 0;
+    }
+
+    /* .frame{
+        position: static;
+        display: block;
+        margin: 20px auto 0;
+    }
+    .decblock{
+        width: 250px;
+        height: 30px;
+    } */
+
+    /* .dec1, .dec2, .dec3{
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    } */
+
+}
+
+@media (min-width: 768px) and (max-width: 980px){
+    main>section{
+        padding: 0 0 140px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    div.sc-content{
+        padding: 10px;
+    }
+
+    div.sc-pic{
+        padding: 10px;
+    }
+
+    div.sc-pic .smodel{
+        width: 290px;
+    }
+
+    .fr1{
+        top: 340px;
+        left: -30px;
+    }
+    
+    .fr2{
+        top: 330px;
+        left: 200px;
+    }
+
+    .fr3{
+        top: 370px;
+        left: -50px;
+    }
+    
+    .dec1{
+        top: 340px;
+        left: 20px;
+    }
+    
+    .dec2{
+        top: 340px;
+        left: 190px;
+    }
+
+    .dec3{
+        top: 370px;
+        left: 0px;
+    }
 }

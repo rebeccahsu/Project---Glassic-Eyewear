@@ -57,7 +57,7 @@ iframe{
     margin-bottom: 50px;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
     .tab>ul{
         display: flex;
         justify-content: space-between;
@@ -85,4 +85,12 @@ iframe{
         height: 200px;
         order: 2;
     }
+}
+
+@media (max-width: 575.98px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    
 }

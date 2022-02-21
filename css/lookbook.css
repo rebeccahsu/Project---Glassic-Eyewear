@@ -42,7 +42,7 @@ main>section{
     z-index: -1;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
     .look-pic{
         width: 100%;
     }
@@ -65,6 +65,14 @@ main>section{
         top: 420px;
         left: 0;
     }
+}
+
+@media (max-width: 575.98px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    
 }
 
 /* ---- 跑馬燈---- */
@@ -116,8 +124,16 @@ li.mpic{
     }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
 
+}
+
+@media (max-width: 575.98px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    
 }
 
 /* ---- Instagram ---- */
@@ -165,7 +181,7 @@ li.mpic{
     opacity: 1;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (max-width: 767.98px){
     .ig ul{
         justify-content: space-evenly;
     }
@@ -179,4 +195,12 @@ li.mpic{
     .ig a.igaccount{
         line-height: 250px;
     }
+}
+
+@media (max-width: 575.98px){
+
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    
 }
