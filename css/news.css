@@ -75,6 +75,9 @@ article .content .np{
 
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px){
+@media (min-width: 768px) and (max-width: 980px){
+    .newscard{
+        width: calc((100% - 30px) / 2);
+    }
     
 }

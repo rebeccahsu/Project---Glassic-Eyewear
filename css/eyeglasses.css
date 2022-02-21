@@ -149,6 +149,70 @@ main a:hover{
 }
 
 @media (max-width: 575.98px){
+    main>section{
+        flex-direction: column;
+        padding: 50px 0;
+        /* border: 1px solid black; */
+    }
+
+    div.ec-pic{
+        align-self: center;
+        /* border: 1px solid red; */
+    }
+
+    div.ec-pic .emodel{
+        width: 80%;
+        display: block;
+        max-width: 305px;
+        margin: 0 auto;
+    }
+
+    div.ec-content{
+        width: 100%;
+        align-self: center;
+        margin-top: 50px;
+        /* border: 1px solid blue; */
+    }
+
+    div.ec-content h3{
+        text-align: center;
+        padding: 0;
+    }
+
+    div.ec-content p{
+        padding: 30px 5% 10px;
+    }
+
+    main>a{
+        margin-top: 50px;
+    }
+
+    .frame{
+        /* position: static; */
+        /* display: block; */
+        display: none;
+        /* margin: 10px auto 0; */
+        /* width: 150px; */
+    }
+
+    .decblock{
+        /* width: 500px;
+        height: 30px; */
+        width: 200px;
+        height: 150px;
+        z-index: -1;
+    }
+
+    .fdec2{
+        top: 70%;
+        left: -20%;
+        background-color: #F0EBD8;
+    }
+
+    .fdec1, .fdec3{
+        top: 80%;
+        left: 60%;
+    }
 
 }
 
