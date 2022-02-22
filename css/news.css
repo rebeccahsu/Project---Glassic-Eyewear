@@ -8,7 +8,7 @@ main{
     padding-bottom: 50px;
 }
 
-article{
+article.newscard{
     display: flex;
     margin-bottom: 120px;
 }
@@ -34,6 +34,7 @@ article .content{
 article .content>a{
     width: 100%;
     height: 100%;
+    display: block;
     position: relative;
 }
 
@@ -72,12 +73,85 @@ article .content .np{
 }
 
 @media (max-width: 575.98px){
+    article.newscard{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        margin: 40px 0 100px;
+    }
+
+    article .ndate{
+        align-self: flex-start;
+        width: 100%;
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+
+    article .ndate>h4{
+        font-size: 20px;
+        transform: none;
+    }
+
+    article .content{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    article .content img{
+        width: 100%;
+    }
+
+    article .content .more{
+        opacity: 1;
+        background-color: transparent;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 15px;
+        border-bottom: 3px solid #748CAB;
+        color: #748CAB;
+        width: 90px;
+        height: auto;
+        line-height: 30px;
+        transition: .3s;
+    }
+
+    article .content>a:hover .more{
+        border-bottom: 3px solid #C4A87E;
+        color: #C4A87E;
+        cursor: pointer;
+    }
+
+    footer{
+        margin-top: 80px;
+    }
 
 }
 
-@media (min-width: 768px) and (max-width: 980px){
-    .newscard{
-        width: calc((100% - 30px) / 2);
+@media (min-width: 880px) and (max-width: 980px){
+    article .ndate{
+        width: 30px;
+        padding-top: 100px;
+        margin-right: 3px;
     }
-    
+
+    article .ndate h4{
+        font-size: 20px;
+    }
+
+    article .content{
+        width: 350px;
+    }
+
+    article .content img{
+        width: 100%;
+    }
+
+    article .content .more{
+        line-height: 140px;
+        width: 100%;
+        height: 140px;
+    }
+
+
 }

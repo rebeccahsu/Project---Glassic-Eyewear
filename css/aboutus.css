@@ -146,8 +146,10 @@ footer{
     }
 
     .titlebc::after{
-        top: 70%;
-        left: 45%;
+        /* top: 70%; */
+        /* left: 45%; */
+        top: 19px;
+        left: 191px;
     }
 
     .titlecms::after{
@@ -156,8 +158,8 @@ footer{
     }
     
     .titlefd::after{
-        top: 30%;
-        left: 42%;
+        top: 26px;
+        left: 118px;
     }
 
     main img{
@@ -167,6 +169,16 @@ footer{
     main div.imgcontainer{
         width: 90%;
         margin: 30px 0 50px 0;
+    }
+
+    .cbc.fadein{
+        transform: none;
+        opacity: 1;
+    }
+
+    .bcimg.slidein.rtl{
+        opacity: 1;
+        transform: none;
     }
 }
 

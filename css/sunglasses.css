@@ -224,6 +224,11 @@ main a:hover{
         left: 70%;
     }
 
+    .sc-pic.slidein.rtl{
+        opacity: 1;
+        transform: none;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 980px){
