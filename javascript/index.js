@@ -52,7 +52,7 @@ window.addEventListener("scroll", function(){
     let narrvl = document.getElementById("narrvl");
     let naitems = document.querySelectorAll("div.i-card");
 
-    if(window.scrollY >= (narrvl.offsetTop * 0.9)){
+    if(window.scrollY >= (narrvl.offsetTop * 0.7)){
         // console.log("here");
         naitems.forEach(function(item, index){
             item.classList.add("active");
@@ -69,7 +69,7 @@ window.addEventListener("scroll", function(){
     let ncard = document.querySelectorAll("div.n-card");
 
     if(window.scrollY >= (whatsnew.offsetTop * 0.9)){
-        console.log("here");
+        // console.log("here");
         ncard.forEach(function(item, index){
             item.classList.add("active");
         })
@@ -81,27 +81,30 @@ window.addEventListener("scroll", function(){
 
 });
 
-
-
 // ----- Scroll 事件 結束 -------
 
+// ------ Brand Concept carousel --------
+let bc_input = document.querySelectorAll("input.bcslider");
 
+function bc_click(i){
+    setTimeout(function(){
 
-//slider
-// var slideIndex = 0;
-// slidesShow();
+        bc_input[i].click();
+        i--;
+        // console.log(i);
 
-// function slidesShow(){
-//     var slides = document.getElementsByClassName("slide");
-//     var dots = document.getElementsByClassName("dot");
-//     for(let i = 0; i < slides.length; i++){
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if(slideIndex > slides.length) {slideIndex = 1}
-//     for(let i = 0; i < dots.lenngth; i++){
-//     dots[i].className = dots[i].className.replace(" active", "");
-//     }    
-//     slides[slideIndex-1].style.display = "block";
-//     setTimeout(slidesShow, 2500);
-// }
+        if(i >= 0){
+            bc_click(i);
+            // console.log(i);
+        }
+
+        if(i < 0){
+            let i = 2;
+            bc_click(i);
+            // console.log(i);
+        }
+        // console.log(i);
+    }, 4000);
+}
+
+bc_click(2);

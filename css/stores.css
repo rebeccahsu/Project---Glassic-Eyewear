@@ -59,14 +59,20 @@ iframe{
 
 @media (max-width: 767.98px){
     .tab>ul{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
         margin-bottom: 40px;
     }
 
     .tab>ul li img{
-        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    ul.fadein{
+        opacity: 1;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots{
+        margin-top: 20px;
     }
 
     .map{
@@ -88,9 +94,37 @@ iframe{
 }
 
 @media (max-width: 575.98px){
+    .tabsname>h4{
+        font-size: 20px;
+    }
 
+    .storename{
+        margin: 50px 0 30px;
+    }
+    ul.fadein{
+        opacity: 1;
+    }
+
+    li.item{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .map-text{
+        margin: 0px 5%;
+    }
+
+    .map-text h4{
+        margin-bottom: 20px;
+    }
+
+    iframe{
+        height: 300px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px){
-    
+@media (min-width: 768px) and (max-width: 979.98px){
+    iframe{
+        height: 480px;
+    }
 }

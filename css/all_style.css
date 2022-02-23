@@ -700,3 +700,43 @@ footer .arrow{
     opacity: 1;
     transform: translateY(0%);
 }
+
+/* ------Back to top-------- */
+div.backtop{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+div.backtop:hover{
+    animation: popping 2s ease infinite;
+}
+
+@keyframes popping {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.backtop img{
+    width: 40px;
+}   
+
+@media (max-width: 575.98px){
+    div.backtop{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .backtop img{
+        width: 30px;
+    }  
+}

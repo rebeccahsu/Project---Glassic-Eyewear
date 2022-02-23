@@ -36,22 +36,11 @@ for(let i = 0; i < ftitle.length; i++){
     let fsub = document.getElementsByClassName("fsub");
     let farrow = document.getElementsByClassName("arrow");
     ftitle[i].addEventListener("click", function(){
-        
-        // if(fsub[i].style.display == ""){
-        //     console.log("1");
-        //     fsub[i].style.display = "block";
-        //     farrow[i].style.transform = "rotate(180deg)";
-        // }else{
-        //     console.log("2");
-        //     // fsub[i].style.display = "none";
-        //     fsub[i].setAttribute("style", "display: none");
-        //     console.log("close");
-        // }
 
         let fmenu_name = document.getElementsByClassName("fmenu_name");
         if(fsub[i].style.maxHeight == ""){
             fsub[i].style.maxHeight = fsub[i].scrollHeight + "px"; // 設定 CSS：max-height
-            farrow[i].style.transform = "rotate(180deg)";
+            farrow[i].style.transform = "rotate(-180deg)";
         }else{
             fsub[i].style.maxHeight = ""; // 移除 CSS： max-height
             farrow[i].style.transform = "rotate(0deg)";
@@ -62,20 +51,6 @@ for(let i = 0; i < ftitle.length; i++){
 
 
 // ----- Scroll 事件: 動畫 active-------
-
-// function scroll(element){
-//     window.addEventListener("scroll", function(){
-//     if( ((this.scrollY + this.innerHeight) - element.offsetHeight / 3) > element.offsetTop){
-//             // console.log("here");
-//             element.classList.add("active");
-//         }else{
-//             element.classList.remove("active");
-//         };
-//     // console.log(window.scrollY + window.innerHeight)
-//     // console.log("高度/3: " + (element.offsetHeight/3))
-//     // console.log("頂部位置: " + element.offsetTop)   
-//     }); 
-// }
 
     window.addEventListener("scroll", function(){
         let slidein = document.getElementsByClassName("slidein");
@@ -112,3 +87,34 @@ for(let i = 0; i < ftitle.length; i++){
         }
         
     });
+
+
+// ----- newsletter input ------
+$("input.the_btn").on("click", function(){
+    alert("Thank you for subscribing!");
+    $("input.the_text").val("");
+});
+
+//---- Back to top ---------
+$(function(){
+	$('#backtop').click(function(){ 
+		$('html,body').animate({scrollTop: 0}, 700);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 350 ){
+			$('#backtop').fadeIn(500);
+		} else {
+			$('#backtop').stop().fadeOut(500);
+		}
+	}).scroll();
+});
+
+$(window).on("scroll", function(){
+    if ($(document).scrollTop() >= $(document).height() - $(window).height() - 200){
+        $('#backtop').css("animation", "popping 2s ease infinite");
+    }else{
+        $('#backtop').css("animation", "none");
+    };
+
+    // if ($(document).scrollTop() >= $(document).height() - $(window).height() - 200)
+});

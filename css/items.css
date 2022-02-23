@@ -153,7 +153,45 @@
 }
 
 @media (max-width: 575.98px){
+    .ocontent{
+        margin: 40px 0;
+        flex-direction: column;
+    }
 
+    .opic{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .opic img{
+        width: 100%;
+        max-width: 301px;
+    }
+
+    .otext{
+        width: auto;
+        /* border: 1px solid red; */
+    }
+
+    .otext h4{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .otext h5{
+        margin: 8px 0;
+        width: 35%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .otext p{
+        display: inline-block;
+        width: 63%;
+        padding-bottom: 0px;
+        margin-top: 6px;
+    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px){

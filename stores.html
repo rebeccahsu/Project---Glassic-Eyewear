@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Niramit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/stores.css">
 </head>
@@ -85,10 +87,10 @@
         <!-- Tab 1 -->
         <div class="tab tab-tp show">
             <h4 class="storename">Nanjing Fuxing Store</h4>
-            <ul class="fadein">
-                <li><img src="img/stores/stores1.png" alt=""></li>
-                <li><img src="img/stores/stores2.png" alt=""></li>
-                <li><img src="img/stores/stores3.png" alt=""></li>
+            <ul class="fadein owl-carousel owl-theme">
+                <li class="item"><img src="img/stores/stores1.png" alt=""></li>
+                <li class="item"><img src="img/stores/stores2.png" alt=""></li>
+                <li class="item"><img src="img/stores/stores3.png" alt=""></li>
             </ul>
             <section class="map">
                 <iframe class="fadein" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4606426578594!2d121.54150181423884!3d25.05237174371044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddf6681287%3A0xff8ecfeaa91cd616!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyMjXomZ8!5e0!3m2!1szh-TW!2stw!4v1643552137405!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -106,10 +108,10 @@
         <!-- Tab 2 -->
         <div class="tab tab-ks noshow">
             <h4 class="storename">Formosa Boulevard Store</h4>
-            <ul class="fadein">
+            <ul class="fadein owl-carousel owl-theme">
+                <li><img src="img/stores/stores5.png" alt=""></li>
+                <li><img src="img/stores/stores6.png" alt=""></li>
                 <li><img src="img/stores/stores4.png" alt=""></li>
-                <li><img src="img/stores/stores1.png" alt=""></li>
-                <li><img src="img/stores/stores2.png" alt=""></li>
             </ul>
             <section class="map">
                 <iframe class="fadein" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1841.2919057170354!2d120.30034142161846!3d22.632011688251875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04897d2144f3%3A0x8080d46567704433!2zODAw6auY6ZuE5biC5paw6IiI5Y2A5Lit5bGx5qmr6LevMjLomZ8!5e0!3m2!1szh-TW!2stw!4v1643553808796!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -148,7 +150,7 @@
                 </div>
                 <span class="underline"></span>
                 <ul class="fsub">
-                    <li><a href="aboutus.html".html">About our brand</a></li>
+                    <li><a href="aboutus.html">About our brand</a></li>
                     <li><a href="stores.html">Stores</a></li>
                     <li><a href="#">Recruit</a></li>
                 </ul>
@@ -182,7 +184,12 @@
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class="backtop" id="backtop">
+        <img src="img/uparrow2.png" alt="">
+    </div>
+
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="javascript/all.js"></script>
     <script src="javascript/stores.js"></script>
 </body>
