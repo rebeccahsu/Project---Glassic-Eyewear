@@ -13,10 +13,6 @@ let omaterial = document.getElementById("omaterial");
 for(let i = 0; i < gitem.length; i++){
 
     gitem[i].addEventListener("click", function(){
-      // mask.classList.remove("noshow");
-      // mask.classList.add("show");
-      // overlay.classList.remove("noshow");
-      // overlay.classList.add("show");
       mask.classList.toggle("noshow");
       overlay.classList.toggle("noshow");
 

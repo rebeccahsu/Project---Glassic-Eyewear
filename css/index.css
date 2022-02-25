@@ -63,68 +63,11 @@
     margin-bottom: 150px;
 }
 
-.bc-img{
-    width: 50%;
-    position: relative;
-}
-
-.bc-img .bc1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    transition: .9s;
-}
-
-.bc-img .bc1:hover{
-    transform: scale(1.1) translateX(-30px) translateY(10px);
-}
-
-.bc-img .bc1:hover + .bc2{
-    transform: scale(0.9) translateX(17px);
-}
-
-.bc-img .bc2{
-    position: absolute;
-    top: 80px;
-    left: 151px;
-    z-index: 3;
-    transition: .9s;
-}
-
-.bc-img .bc2:hover{
-    transform: scale(1.05);
-}
-
-.bc-img .bc3{
-    position: absolute;
-    top: 45px;
-    left: 375px;
-    z-index: 1;
-    transition: .9s;
-}
-
-.bc-img .bc3:hover{
-    transform: scale(1.1) translateY(-25px) translateX(20px);
-}
-
-.bc-img .bc3:hover + .bc2{
-    transform: scale(0.9) translateY(25px) translateX(-20px);
-}
-
-.bc-text{
-    width: 50%;
-}
-
-.bc-text h3{
-    padding: 110px 0 130px 80px;
-}
-
-/* --------Section 1: Brand Concept - Carousel------------ */
+/* ------- Carousel-------- */
 .bccarousel{
-    display: none;
-
-    /* width: 50%; */
+    width: 50%;
+    padding-top: 79px;
+    padding-left: 22px;
 }
 
 input.bcslider{
@@ -139,8 +82,7 @@ div.bccards {
 
 label.bccard {
     position: absolute;
-    width: 201px;
-    /* width: 256px; */
+    width: 256px;
     left: 0;
     right: 0;
     margin: auto;
@@ -154,39 +96,43 @@ label.bccard {
 }
 
 #bcitem-1:checked ~ .bccards .bci3, #bcitem-2:checked ~ .bccards .bci1, #bcitem-3:checked ~ .bccards .bci2 {
-    transform: translatex(-45%) scale(.8);
-    opacity: .8;
+    transform: translatex(-70%) translateY(-32%) scale(.8);
     z-index: 0;
     transition: .8s;
 }
 
 #bcitem-1:checked ~ .bccards .bci3:hover, #bcitem-2:checked ~ .bccards .bci1:hover, #bcitem-3:checked ~ .bccards .bci2:hover {
-    transform: translatex(-55%) scale(.9);
+    transform: translatex(-70%) translateY(-32%) scale(.9);
 }
 
 #bcitem-1:checked ~ .bccards .bci2, #bcitem-2:checked ~ .bccards .bci3, #bcitem-3:checked ~ .bccards .bci1 {
-    transform: translatex(45%) scale(.8);
-    opacity: .8;
+    transform: translatex(77%) translateY(-20%) scale(.8);
     z-index: 0;
     transition: .8s;
 }
 
 #bcitem-1:checked ~ .bccards .bci2:hover, #bcitem-2:checked ~ .bccards .bci3:hover, #bcitem-3:checked ~ .bccards .bci1:hover {
-    transform: translatex(55%) scale(.9);
+    transform: translatex(77%) translateY(-20%) scale(.9);
 }
 
 #bcitem-1:checked ~ .bccards .bci1, #bcitem-2:checked ~ .bccards .bci2, #bcitem-3:checked ~ .bccards .bci3 {
     transform: translatex(0) scale(1);
-    opacity: 1;
     z-index: 1;
     transition: .8s;
 }
 
 #bcitem-1:checked ~ .bccards .bci1:hover, #bcitem-2:checked ~ .bccards .bci2:hover, #bcitem-3:checked ~ .bccards .bci3:hover {
     transform: translatex(0) scale(1.1);
-    opacity: 1;
     z-index: 1;
     transition: .8s;
+}
+
+.bc-text{
+    width: 50%;
+}
+
+.bc-text h3{
+    padding: 110px 0 130px 80px;
 }
 
 @media screen and (max-width: 575.98px){
@@ -197,10 +143,6 @@ label.bccard {
         align-items: center;
     }
 
-    .bc-img{
-        display: none;
-    }
-
     .bccarousel{
         display: block;
         width: 100%;
@@ -209,6 +151,10 @@ label.bccard {
         padding: 0 10px;
         margin-top: 50px;
         margin-bottom: 80px;
+    }
+
+    label.bccard {
+        width: 201px;
     }
     
     .bc-text{
@@ -224,6 +170,21 @@ label.bccard {
         display: inline-block;
         text-align: start;
     }
+
+    #bcitem-1:checked ~ .bccards .bci3, #bcitem-2:checked ~ .bccards .bci1, #bcitem-3:checked ~ .bccards .bci2 {
+        transform: translatex(-45%) scale(.8);
+        opacity: .8;
+    }
+    
+    #bcitem-1:checked ~ .bccards .bci2, #bcitem-2:checked ~ .bccards .bci3, #bcitem-3:checked ~ .bccards .bci1 {
+        transform: translatex(45%) scale(.8);
+        opacity: .8;
+    }
+    
+    #bcitem-1:checked ~ .bccards .bci1, #bcitem-2:checked ~ .bccards .bci2, #bcitem-3:checked ~ .bccards .bci3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -234,8 +195,8 @@ label.bccard {
         align-items: center;
     }
 
-    .bc-img{
-        display: none;
+    label.bccard {
+        width: 201px;
     }
 
     .bccarousel{
@@ -251,15 +212,11 @@ label.bccard {
     #bcitem-1:checked ~ .bccards .bci3, #bcitem-2:checked ~ .bccards .bci1, #bcitem-3:checked ~ .bccards .bci2 {
         transform: translatex(-80%) scale(.8);
         opacity: .8;
-        z-index: 0;
-        transition: .8s;
     }
       
     #bcitem-1:checked ~ .bccards .bci2, #bcitem-2:checked ~ .bccards .bci3, #bcitem-3:checked ~ .bccards .bci1 {
         transform: translatex(80%) scale(.8);
         opacity: .8;
-        z-index: 0;
-        transition: .8s;
     }
 
     #bcitem-1:checked ~ .bccards .bci3:hover, #bcitem-2:checked ~ .bccards .bci1:hover, #bcitem-3:checked ~ .bccards .bci2:hover {
@@ -291,29 +248,40 @@ label.bccard {
     .bccarousel{
         display: block;
         width: 50%;
-        /* border: 1px solid red; */
+        padding-top: 0;
+        padding-left: 0;
     }
 
     div.bccards {
         position: relative;
         width: 100%;
-        /* border: 1px solid blue; */
         margin: 0 auto;
     }
-    
+
     label.bccard {
-        position: absolute;
         width: 201px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        transition: transform .4s ease;
-        cursor: pointer;
     }
-    
+
+    #bcitem-1:checked ~ .bccards .bci3, #bcitem-2:checked ~ .bccards .bci1, #bcitem-3:checked ~ .bccards .bci2 {
+        transform: translatex(-45%) scale(.8);
+        opacity: .8;
+    }
+      
+    #bcitem-1:checked ~ .bccards .bci2, #bcitem-2:checked ~ .bccards .bci3, #bcitem-3:checked ~ .bccards .bci1 {
+        transform: translatex(45%) scale(.8);
+        opacity: .8;
+    }
+
+    #bcitem-1:checked ~ .bccards .bci3:hover, #bcitem-2:checked ~ .bccards .bci1:hover, #bcitem-3:checked ~ .bccards .bci2:hover {
+        transform: translatex(-45%) scale(.9);
+    }
+
+    #bcitem-1:checked ~ .bccards .bci2:hover, #bcitem-2:checked ~ .bccards .bci3:hover, #bcitem-3:checked ~ .bccards .bci1:hover{
+        transform: translatex(45%) scale(.9);
+    }
+
     .bc-text{
         width: 50%;
-        /* border: 1px solid yellow; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -329,7 +297,7 @@ label.bccard {
 
 @media (min-width: 980px) and (max-width: 1199.98px){
     .bc{
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         margin-top: 50px;
     }
 
@@ -337,27 +305,30 @@ label.bccard {
         padding: 0 10px;
     }
 
-    .bc-img{
-        margin-left: 15px;
+    .bccarousel{
+        width: 53%;
+        padding-top: 87px;
+        padding-left: 0;
     }
 
-    .bc-img .bc1, .bc-img .bc3{
-        width: 33%;
+    label.bccard {
+        width: 41%;
     }
 
-    .bc-img .bc2{
-        width: 43%;
-        top: 80px;
-        left: 25%;
+    #bcitem-1:checked ~ .bccards .bci3, #bcitem-2:checked ~ .bccards .bci1, #bcitem-3:checked ~ .bccards .bci2 {
+        transform: translatex(-70%) translateY(-35%) scale(.8);
+    }
+    
+    #bcitem-1:checked ~ .bccards .bci3:hover, #bcitem-2:checked ~ .bccards .bci1:hover, #bcitem-3:checked ~ .bccards .bci2:hover {
+        transform: translatex(-70%) translateY(-35%) scale(.9);
     }
 
-    .bc-img .bc3{
-        top: 45px;
-        left: 60%;
+    #bcitem-1:checked ~ .bccards .bci2, #bcitem-2:checked ~ .bccards .bci3, #bcitem-3:checked ~ .bccards .bci1 {
+        transform: translatex(70%) translateY(-20%) scale(.8);
     }
-
-    .bc-img .bc1:hover{
-        transform: scale(1.1) translateX(-15px) translateY(10px);
+    
+    #bcitem-1:checked ~ .bccards .bci2:hover, #bcitem-2:checked ~ .bccards .bci3:hover, #bcitem-3:checked ~ .bccards .bci1:hover {
+        transform: translatex(70%) translateY(-20%) scale(.9);
     }
 
     .bc-text h3{
