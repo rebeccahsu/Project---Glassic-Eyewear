@@ -19,7 +19,9 @@ for(let i = 0; i < gitem.length; i++){
 
     gitem[i].addEventListener("click", function(){
         // console.log("clicked");
-        opic.innerHTML = "";
+        // opic.innerHTML = "";
+
+        
 
         mask.classList.remove("noshow");
         mask.classList.add("show");
@@ -38,32 +40,39 @@ for(let i = 0; i < gitem.length; i++){
         let oitemmaterial = document.getElementsByClassName("material")[i].innerHTML;
         omaterial.innerHTML = oitemmaterial;
 
-        let oitempic = document.getElementsByClassName("ipic")[i].src;
-        opic.insertAdjacentHTML("afterbegin", '<li class="owl-item"><img src="'+ oitempic +'"></li>');
+        // let oitempic = document.getElementsByClassName("ipic")[i].src;
+        // opic.insertAdjacentHTML("afterbegin", '<img src="'+ oitempic +'">');
 
         // let oitempic2 = document.getElementsByClassName("ipic2")[i].src;
-        // opic.insertAdjacentHTML("beforeend", '<li class="owl-item"><img src="'+ oitempic2 +'"></li>');
+        // opic.insertAdjacentHTML("beforeend", '<img src="'+ oitempic2 +'">');
 
-        // let oitempic = document.getElementsByClassName("ipic")[i].src;
+        let swiperel = document.getElementsByClassName("swiper-slide");
+
+        let oitempic = document.getElementsByClassName("ipic")[i].src;
         
-        // console.log(oitempic);
         // opicimg.setAttribute("src", oitempic);
+        swiperel[0].setAttribute("src", oitempic);
 
-        // let oitempic2 = document.getElementsByClassName("ipic2")[i].getAttribute("src");
+        let oitempic2 = document.getElementsByClassName("ipic2")[i].src;
         
         // opicimg2.setAttribute("src", oitempic2);
+        swiperel[1].setAttribute("src", oitempic2);
         // opic.classList.add("owl-carousel");
         // opic.classList.add("owl-theme");
+
     });
 };
 
 let xbutton = document.getElementsByClassName("close")[0];
+// let firstdot = document.querySelector("span.swiper-pagination-bullet");
 // console.log(xbutton);
 xbutton.addEventListener("click", function(){
     mask.classList.remove("show");
     mask.classList.add("noshow");
     overlay.classList.remove("show");
     overlay.classList.add("noshow");
+    let firstdot = document.querySelector("span.swiper-pagination-bullet");
+    firstdot.click();
 });
 
 mask.addEventListener("click", function(){
@@ -71,35 +80,18 @@ mask.addEventListener("click", function(){
     mask.classList.add("noshow");
     overlay.classList.remove("show");
     overlay.classList.add("noshow");
+    let firstdot = document.querySelector("span.swiper-pagination-bullet");
+    firstdot.click();
 });
 
-
-// --------- Carousel ------------
-$(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      576: {
-        items: 1
-      },
-      768: {
-        items: 1
-      }
-    }
+// Initialize Swiper
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+  },
 });
-
-
-/*
-document.querySelectorAll(".gitem").forEach(function(gitem){
-    gitem.addEventListener('click', function(){
-        mask.classList.remove("noshow");
-        mask.classList.add("show");
-        overlay.classList.remove("noshow");
-        overlay.classList.add("show");
-    })
-})
-*/

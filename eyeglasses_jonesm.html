@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Niramit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/items.css">
 </head>
@@ -67,7 +66,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- Top Block -->
     <section class="top">
         <div class="topspace">
@@ -96,8 +94,8 @@
         <li class="gitem">
             <img class="ipic" src="img/items/jonesm267x2.jpg" alt="Jones M. 267">
             <h4 class="itemname">Jones M. 267</h4>
-
             <div class="info">
+                <img class="ipic2" src="img/items/jonesm267-2x2.jpg" alt="">
                 <p class="icolor">Olive Green</p>
                 <p class="size">48/19 mm</p>
                 <p class="material">Acetate</p>
@@ -107,6 +105,7 @@
             <img class="ipic" src="img/items/jonesm268x2.jpg" alt="Jones M. 268">
             <h4 class="itemname">Jones M. 268</h4>
             <div class="info">
+                <img class="ipic2" src="img/items/jonesm268-2x2.png" alt="">
                 <p class="icolor">Black & Brown Tortoise</p>
                 <p class="size">48/19 mm</p>
                 <p class="material">Acetate</p>
@@ -116,6 +115,7 @@
             <img class="ipic" src="img/items/jonesm305x2.jpg" alt="Jones M. 305">
             <h4 class="itemname">Jones M. 305</h4>
             <div class="info">
+                <img class="ipic2" src="img/items/jonesm305-2x2.jpg" alt="">
                 <p class="icolor">Brown Transparent</p>
                 <p class="size">48/19 mm</p>
                 <p class="material">Acetate</p>
@@ -125,6 +125,7 @@
             <img class="ipic" src="img/items/jonesm563x2.jpg" alt="Jones M. 563">
             <h4 class="itemname">Jones M. 563</h4>
             <div class="info">
+                <img class="ipic2" src="img/items/jonesm563-2x2.jpg" alt="">
                 <p class="icolor">Transparent</p>
                 <p class="size">46/20 mm</p>
                 <p class="material">Acetate</p>
@@ -134,37 +135,43 @@
             <img class="ipic" src="img/items/jonesm145x2.jpg" alt="Jones M. 145">
             <h4 class="itemname">Jones M. 145</h4>
             <div class="info">
+                <img class="ipic2" src="img/items/jonesm145-2x2.jpg" alt="">
                 <p class="icolor">Marble Gray</p>
                 <p class="size">46/20 mm</p>
                 <p class="material">Acetate</p>
             </div>
-        </li>
-            <!-- Overlay -->
-        <div class="overlay noshow" id="overlay">
-            <button class="close">X</button>
-            <div class="ocontent">
-                <ul class="opic owl-carousel owl-theme" id="opic">
-                    <li class="item"><img id="opicimg" src="" alt=""></li>
-                    <li class="item"><img id="opicimg2" src="" alt=""></li>
-                </ul>
-                <div class="otext">
-                    <h4 id="oname"></h4>
-                    <h5>Color</h5>
-                    <p id="ocolor"></p>
-                    <h5>Size</h5>
-                    <p id="osize"></p>
-                    <h5>Material</h5>
-                    <p id="omaterial"></p>
+        </li>    
+    </ul>
+    <!-- Overlay -->
+    <div class="overlay noshow" id="overlay">
+        <button class="close">X</button>
+        <div class="ocontent">
+            <!-- <div class="opic" id="opic"> -->
+                <!-- <li><img id="opicimg" src="img/items/jonesm135x2.jpg" alt=""></li> -->
+                <!-- <li><img id="opicimg2" src="img/items/jonesm135-2x2.jpg" alt=""></li> -->
+            <!-- </div> -->
+
+            <div class="swiper mySwiper" id="opic">
+                <div class="swiper-wrapper opic" id="opic">
+                    <img class="swiper-slide" id="opicimg1" src="" alt="">
+                    <img class="swiper-slide" id="opicimg2" src="" alt="">
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <div class="otext">
+                <h4 id="oname"></h4>
+                <h5>Color</h5>
+                <p id="ocolor"></p>
+                <h5>Size</h5>
+                <p id="osize"></p>
+                <h5>Material</h5>
+                <p id="omaterial"></p>
             </div>
         </div>
-    </ul>
-
+    </div>
     <!-- Overlay mask -->
     <div id="mask" class="noshow"></div>
-
-
-   
     <!-- Footer -->
     <footer>
         <nav class="wrapper">
@@ -220,14 +227,15 @@
         </nav>
         <p class="wrapper">本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。參考資源：OWDEN EYEWEAR。</p>
     </footer>
-
+    <!-- Back to top button -->
     <div class="backtop" id="backtop">
         <img src="img/uparrow2.png" alt="">
     </div>
     
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="javascript/all.js"></script>
     <script src="javascript/items.js"></script>
+
 </body>
 </html>
