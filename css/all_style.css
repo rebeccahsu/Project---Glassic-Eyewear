@@ -245,13 +245,10 @@ ul.ham-menu{
     position: absolute;
     right: 0px;
     transform: translateX(-100%); 
-    /* border: 1px solid pink; */
     background-color: #26273bf3;
     /* display: none; */
     border-radius: 0 0 5px 5px;
     padding: 10px;
-    /* transition: .3s; */
-    /* opacity: 0; */
     transition: 1s;
     transform: translateX(120%);
 }
@@ -262,9 +259,7 @@ ul.ham-menu.active{
 }
 
 .ham-menu li{
-    /* border: 1px solid lightblue; */
     padding: 8px;
-    /* text-align: right; */
     margin-left: 10px;
 }
 
@@ -275,7 +270,6 @@ ul.ham-menu.active{
 .ham-menu a{
     font-size: 35px;
     transition: .5s;
-    /* border: 1px solid red; */
     width: 100%;
     display: block;
 }
@@ -283,7 +277,6 @@ ul.ham-menu.active{
 .ham-menu a:hover{
     color: #F0EBD8;
 }
-
 
 .ham-menu li.pli:hover .horizontal, .ham-menu li.pli:hover .vertical{
     background-color: #F0EBD8;
@@ -342,12 +335,10 @@ ol.ham_subsel{
 
 @keyframes subsel{
     0% {
-        /* width: 0; */
         opacity: 0;
     }
 
     100%{
-        /* width: 100%; */
         opacity: 1;
     }
 }
@@ -420,7 +411,6 @@ ol.ham_subsel{
         width: 100%;
         height: auto;
         padding-top: 45%;
-        /* border: 2px solid red; */
         overflow: hidden;
         
         /* margin-top: 80px; */
@@ -476,7 +466,6 @@ ol.ham_subsel{
     .top{
         width: 100%;
         overflow: hidden;
-        /* border: 1px solid blue; */
     }
 }
 
@@ -530,8 +519,8 @@ footer .icon img:hover{
 }
 
 input {
-    -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
-    -moz-appearance: none;     /* FireFox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
@@ -593,13 +582,11 @@ footer .arrow{
     
     footer nav{
         flex-direction: column;
-        /* align-items: center; */
     }
 
     footer .ftitle{
         padding-bottom: 15px;
         cursor: pointer;
-        /* border: 1px solid pink; */
     }
 
     footer .ftitle>h5{
@@ -621,7 +608,6 @@ footer .arrow{
         max-height: 0px;  
         overflow: hidden;
         transition: .5s;
-        /* border: 1px solid red; */
     }
 
     footer .icon{
@@ -648,6 +634,46 @@ footer .arrow{
         margin-bottom: 20px;
         min-width: 70%;
     }
+}
+
+/* ------Back to top-------- */
+div.backtop{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+div.backtop:hover{
+    animation: popping 2s ease infinite;
+}
+
+@keyframes popping {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.backtop img{
+    width: 40px;
+}   
+
+@media (max-width: 575.98px){
+    div.backtop{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .backtop img{
+        width: 30px;
+    }  
 }
 
 /* ------滑入動畫------ */
@@ -701,42 +727,3 @@ footer .arrow{
     transform: translateY(0%);
 }
 
-/* ------Back to top-------- */
-div.backtop{
-    cursor: pointer;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-
-div.backtop:hover{
-    animation: popping 2s ease infinite;
-}
-
-@keyframes popping {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-10px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-
-.backtop img{
-    width: 40px;
-}   
-
-@media (max-width: 575.98px){
-    div.backtop{
-        right: 10px;
-        bottom: 10px;
-    }
-
-    .backtop img{
-        width: 30px;
-    }  
-}

@@ -1,12 +1,54 @@
 /* ----- Top Block ----- */
 .indextop{
     margin: 0 auto;
+    position: relative;
 }
 
 .indextop img{
     width: 100%;
     /* max-width: 100%; */
     margin: 0 auto;
+}
+
+.indextop .toplogo{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    animation: pulse 1.5s ease infinite;
+}
+
+.indextop .topicon{
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    animation: logorotate 10s ease infinite;
+}
+
+@keyframes logorotate {
+    0%{
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(90deg) translate(30%, -50%);
+    }
+    50%{
+        transform: rotate(270deg);    
+    }
+    75%{
+        transform: rotate(360deg) translate(0%, 0%);
+    }    
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: translateY(-10px) scale(1.1);
+    }    
+    100%{
+        transform: translateY(0px) scale(1);
+    }
 }
 
 @media screen and (max-width: 575.98px){
@@ -635,5 +677,111 @@ label.bccard {
 
     .wrapper{
         overflow: hidden;
+    }
+}
+
+/* ----- Loading page ---- */
+.loadingpage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;  
+    z-index: 100;
+}
+
+.bar{
+    background-color: #1b1c2b;
+    width: 100%;
+    height: calc(100vh / 3);
+}
+
+.bar2{
+    position: relative;
+}
+
+@keyframes bar{
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        opacity: .5;
+    }
+}
+
+.loadcontent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.loadlogo{
+    width: 100px;
+    animation: loading 10s ease infinite;
+    margin-right: 20px;
+}
+
+.typing{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 10s steps(80) infinite;
+    color: #C4A87E;
+}
+
+@keyframes loading {
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(270deg);    
+    }
+    75%{
+        opacity: 1;
+        transform: rotate(360deg) ;
+    }    
+    100%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes type {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    50%{
+        opacity: 1;
+    }
+    75% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .loadcontent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .loadlogo{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .loadcontent h4{
+        font-size: 18px;
     }
 }

@@ -1,3 +1,22 @@
+// -------- Loading page ----------
+window.addEventListener("load", function(){
+
+    setTimeout(function () {
+        $(".loadcontent").fadeOut();
+        $(".bar1").attr("style", "animation: bar 1.5s ease;");
+        $(".bar2").attr("style", "animation: bar 1.5s .3s ease;");
+        $(".bar3").attr("style", "animation: bar 1.5s .6s ease;");
+    }, 2000);
+
+    setTimeout(function(){
+        $(".bar").css("width", "0%");
+    }, 2500);
+
+    setTimeout(function(){
+        $(".loadingpage").remove();
+    }, 3800);
+});
+
 // ------ Brand Concept carousel --------
 let bc_input = document.querySelectorAll("input.bcslider");
 
@@ -41,7 +60,7 @@ window.addEventListener("scroll", function(){
     let narrvl = document.getElementById("narrvl");
     let naitems = document.querySelectorAll("div.i-card");
 
-    if(window.scrollY >= (narrvl.offsetTop * 0.7)){
+    if(window.scrollY >= (narrvl.offsetTop * 0.8)){
         // console.log("here");
         naitems.forEach(function(item, index){
             item.classList.add("active");
@@ -69,5 +88,3 @@ window.addEventListener("scroll", function(){
     }
 
 });
-
-// ----- Scroll 事件 結束 -------
