@@ -1,0 +1,32 @@
+.main-sel li{
+    /* border: 1px solid red; */
+}
+
+.main-sel ul>li.fa{
+    flex-grow: 0;
+}
+
+
+img.heart{
+    width: 21px;
+    /* border: 1px solid blue; */
+    vertical-align: middle;
+    transition: .3s;
+    opacity: .8;
+}
+
+img.heart:hover{
+    opacity: .5;
+}
+
+img.heart_filled{
+    opacity: .8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+}
+
+img.heart_filled:hover{
+    opacity: 1;
+}

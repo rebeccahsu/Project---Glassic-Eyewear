@@ -34,6 +34,22 @@ for(let i = 0; i < gitem.length; i++){
       let oitempic2 = document.getElementsByClassName("ipic2")[i].src;
       swiperel[1].setAttribute("src", oitempic2);
 
+      // like button
+      let l_items = JSON.parse(localStorage.getItem("l_items"));
+      let h_filled = document.querySelector("img.heart_filled");
+
+      for(let i = 0; i < l_items.length; i++){
+        if (l_items[i].name == oname.innerHTML){
+          console.log("yes");
+          h_filled.classList.add("-on");
+          break;
+        }else{
+          console.log("no");
+          h_filled.classList.remove("-on");
+        }
+
+      };
+
     });
 };
 
@@ -96,4 +112,56 @@ window.addEventListener("load", function(){
 
 window.addEventListener("resize", function(){
   zoom_event();
+});
+
+// ----- Like -----
+let like_btn = document.querySelector("div.like");
+like_btn.addEventListener("click", function(){
+
+  let h_filled = document.querySelector("img.heart_filled");
+  
+  if (h_filled.classList.contains("-on")){
+
+    h_filled.classList.remove("-on");
+
+    // ******從 localStorage 移除資料******** //
+    let l_items = JSON.parse(localStorage.getItem("l_items"));
+    let updated_l_items = [];
+    l_items.forEach(function(item, i){
+
+      if(item.name == oname.innerHTML){
+      }else{
+        updated_l_items.push(item);
+      };
+    });
+
+    // 回存至 localStorage
+    localStorage.setItem("l_items", JSON.stringify(updated_l_items));
+
+  }else{
+
+    h_filled.classList.add("-on");
+
+    // ******資料儲存到 localStorage*********
+    let item_id = Date.now();
+    let l_item = {
+      "item_id": item_id,
+      "name": oname.innerHTML,
+      "color": ocolor.innerHTML,
+      "size": osize.innerHTML,
+      "material": omaterial.innerHTML
+    };
+    
+    let l_items = JSON.parse(localStorage.getItem("l_items")); //抓出來是字串再轉回物件
+    console.log(l_items);
+    
+    if (l_items) { // 若存在
+
+      l_items.unshift(l_item); //把物件放在陣列裡索引值為 0 的地方
+    } else { // 若不存在
+      l_items = [l_item];
+    }
+    localStorage.setItem("l_items", JSON.stringify(l_items));
+  }
+
 });

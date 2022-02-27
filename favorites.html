@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Eyeglasses | Jones M. | Glassic Eyewear</title>
+    <title>Favorites | Glassic Eyewear</title>
     <link rel="icon" href="img/titleicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Niramit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/items.css">
+    <link rel="stylesheet" href="css/favorites.css">
 </head>
 <body>
     <!-- Header -->
@@ -20,18 +23,33 @@
             <h1><a class="logo" href="index.html"><img src="img/logo.svg" alt="Glassic Eyewear"></a></h1>
             <ul>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a class="currentpage" href="eyeglasses.html">PRODUCTS</a>
+                <li><a href="eyeglasses.html">PRODUCTS</a>
+                
                 <!-- Sub-sel -->
                     <ol>
                         <li><a href="eyeglasses.html">EYEGLASSES</a></li>
                         <li><a href="sunglasses.html">SUNGLASSES</a></li>
                     </ol>
+                    
                 </li>
+
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="stores.html">STORES</a></li>
+                <li class="fa"><a href="favorites.html">
+                        <img class="heart heart_empty" src="img/heart.svg" alt="">
+                        <img class="heart heart_filled" src="img/heart_filled.svg" alt="">
+                    
+                    <!-- <span class="material-icons favorite_b">
+                        favorite_border
+                    </span> -->
+                    <!-- <span class="material-icons favorite">
+                        favorite
+                    </span> -->
+                </a></li>
             </ul>
         </nav>
+
         <!-- Hamburger -->
         <nav class="ham_sel">
             <div class="ham-nav">
@@ -49,11 +67,13 @@
                         <span class="plus horizontal"></span>
                         <span class="minus vertical"></span>     
                     </li>
+
                     <!-- Sub-sel -->
                     <ol class="ham_subsel">
                         <li><a href="eyeglasses.html">EYEGLASSES</a></li>
                         <li><a href="sunglasses.html">SUNGLASSES</a></li>
                     </ol>
+
                     <li><a href="lookbook.html">LOOKBOOK</a></li>
                     <li><a href="news.html">NEWS</a></li>
                     <li><a href="stores.html">STORES</a></li>
@@ -63,79 +83,83 @@
     <!-- Top Block -->
     <section class="top">
         <div class="topspace">
-            <h2>EYEGLASSES</h2>
+            <h2>FAVORITES</h2>
         </div>
         <div class="view">
-            <img src="img/eyeglasses/glassestop.png" alt="">
+            <img src="img/favoritestop.png" alt="">
             <!-- Top Block Mask-->
-            <div class="topmask">
-                <h3>Jones M.</h3>
-            </div>
+            <!-- <div class="topmask">
+                <h3>Evans C.</h3>
+            </div> -->
         </div>
     </section>
     <!-- Main Block -->
-    <ul class="main wrapper">        
+    <ul class="main wrapper">
         <li class="gitem">
-            <img class="ipic" src="img/items/jonesm135x2.jpg" alt="Jones M. 135">
-            <h4 class="itemname">Jones M. 135</h4>
+            <img class="ipic" src="img/items/evansc128x2.jpg" alt="Jones M. 135">
+            <h4 class="itemname">Evans C. 128</h4>
             <div class="info">
-                <img class="ipic2" src="img/items/jonesm135-2x2.jpg" alt="">
-                <p class="icolor">Brown Tortoise</p>
-                <p class="size">46/20 mm</p>
-                <p class="material">Acetate</p>
+                <img class="ipic2" src="img/items/evansc128-2x2.jpg" alt="">
+                <p class="icolor">Golden</p>
+                <p class="size">57/18 mm</p>
+                <p class="material">Stainless Steel</p>
             </div>
         </li>
         <li class="gitem">
-            <img class="ipic" src="img/items/jonesm267x2.jpg" alt="Jones M. 267">
-            <h4 class="itemname">Jones M. 267</h4>
+            <img class="ipic" src="img/items/evansc379x2.jpg" alt="Jones M. 267">
+            <h4 class="itemname">Evans C. 379</h4>
+            <div class="info">
+                <img class="ipic2" src="img/items/evansc379-2x2.jpg" alt="">
+                <p class="icolor">Gray</p>
+                <p class="size">48/22 mm</p>
+                <p class="material">Stainless Steel</p>
+            </div>
+        </li>
+        <li class="gitem">
+            <img class="ipic" src="img/items/evansc562x2.jpg" alt="Jones M. 268">
+            <h4 class="itemname">Evans C. 562</h4>
+            <div class="info">
+                <img class="ipic2" src="img/items/evansc562-2x2.jpg" alt="">
+                <p class="icolor">Golden</p>
+                <p class="size">57/18 mm</p>
+                <p class="material">Stainless Steel</p>
+            </div>
+        </li>
+
+        <li class="gitem">
+            <img class="ipic" src="img/items/evansc452x2.jpg" alt="Jones M. 305">
+            <h4 class="itemname">Evans C. 452</h4>
+            <div class="info">
+                <img class="ipic2" src="img/items/evansc452-2x2.jpg" alt="">
+                <p class="icolor">Brown</p>
+                <p class="size">56/19 mm</p>
+                <p class="material">Stainless Steel</p>
+            </div>
+        </li>
+
+        <li class="gitem">
+            <img class="ipic" src="img/items/evansc453x2.jpg" alt="Jones M. 563">
+            <h4 class="itemname">Evans C. 453</h4>
 
             <div class="info">
-                <img class="ipic2" src="img/items/jonesm267-2x2.jpg" alt="">
-                <p class="icolor">Olive Green</p>
-                <p class="size">48/19 mm</p>
-                <p class="material">Acetate</p>
+                <img class="ipic2" src="img/items/evansc453-2x2.jpg" alt="">
+                <p class="icolor">Matte Gunmetal</p>
+                <p class="size">56/19 mm</p>
+                <p class="material">Stainless Steel</p>
             </div>
         </li>
+
         <li class="gitem">
-            <img class="ipic" src="img/items/jonesm268x2.jpg" alt="Jones M. 268">
-            <h4 class="itemname">Jones M. 268</h4>
+            <img class="ipic" src="img/items/evansc454x2.jpg" alt="Jones M. 145">
+            <h4 class="itemname">Evans C. 454</h4>
+
             <div class="info">
-                <img class="ipic2" src="img/items/jonesm268-2x2.png" alt="">
-                <p class="icolor">Black & Brown Tortoise</p>
-                <p class="size">48/19 mm</p>
-                <p class="material">Acetate</p>
+                <img class="ipic2" src="img/items/evansc454-2x2.jpg" alt="">
+                <p class="icolor">Black</p>
+                <p class="size">56/19 mm</p>
+                <p class="material">Stainless Steel</p>
             </div>
         </li>
-        <li class="gitem">
-            <img class="ipic" src="img/items/jonesm305x2.jpg" alt="Jones M. 305">
-            <h4 class="itemname">Jones M. 305</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/jonesm305-2x2.jpg" alt="">
-                <p class="icolor">Brown Transparent</p>
-                <p class="size">48/19 mm</p>
-                <p class="material">Acetate</p>
-            </div>
-        </li>
-        <li class="gitem">
-            <img class="ipic" src="img/items/jonesm563x2.jpg" alt="Jones M. 563">
-            <h4 class="itemname">Jones M. 563</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/jonesm563-2x2.jpg" alt="">
-                <p class="icolor">Transparent</p>
-                <p class="size">46/20 mm</p>
-                <p class="material">Acetate</p>
-            </div>
-        </li>
-        <li class="gitem">
-            <img class="ipic" src="img/items/jonesm145x2.jpg" alt="Jones M. 145">
-            <h4 class="itemname">Jones M. 145</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/jonesm145-2x2.jpg" alt="">
-                <p class="icolor">Marble Gray</p>
-                <p class="size">46/20 mm</p>
-                <p class="material">Acetate</p>
-            </div>
-        </li>    
     </ul>
     <!-- Overlay -->
     <div class="overlay noshow" id="overlay">
@@ -147,12 +171,7 @@
                     <img class="swiper-slide" id="opicimg2" src="" alt="">
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="like">
-                    <img class="heart heart_empty" src="img/heart.svg" alt="">
-                    <img class="heart heart_filled" src="img/heart_filled.svg" alt="">
-                </div>
             </div>
-            
             <div id="magnifier"></div>
             <div class="otext">
                 <h4 id="oname"></h4>
@@ -231,6 +250,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="javascript/all.js"></script>
     <script src="javascript/items.js"></script>
-
+    <script src="javascript/favorites.js"></script>
 </body>
 </html>
