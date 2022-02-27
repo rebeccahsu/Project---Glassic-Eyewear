@@ -376,6 +376,10 @@ ol.ham_subsel{
     opacity: .5;
 }
 
+.mheart_empty.-off{
+    opacity: 0;
+}
+
 
 /* --------- Header Mediaquery----------- */
 
@@ -406,11 +410,59 @@ ol.ham_subsel{
     top: 30px;
     left: 0;
     z-index: 2;
+    animation: toph2 1.5s ease;
+}
+
+@keyframes toph2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .top .view{
     position: relative;
     height: 330px;
+}
+
+.viewmask{
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    background-color: #1b1c2b;
+    animation: opening 1.5s ease;
+    z-index: 1;
+}
+
+.viewmask2{
+    height: 100%;
+    position: absolute;
+    background-color: #F0EBD8;
+    animation: opening2 1.5s ease .3s;
+}
+
+@keyframes opening {
+    0%{
+        /* background-color: #1b1c2b; */
+        width: 100%;
+    }
+    100%{
+        /* background-color: #F0EBD8; */
+        width: 0%;
+    }
+}
+
+@keyframes opening2 {
+    0%{
+        opacity: 0;
+        width: 100%;
+    }
+    100%{
+        opacity: 1;
+        width: 0%;
+    }
 }
 
 .top img{

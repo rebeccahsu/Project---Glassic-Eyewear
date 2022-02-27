@@ -14,7 +14,7 @@ window.addEventListener("load", function(){
 
     setTimeout(function(){
         $(".loadingpage").remove();
-    }, 3800);
+    }, 2200);
 });
 
 // ------ Brand Concept carousel --------

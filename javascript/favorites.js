@@ -1,20 +1,6 @@
-// // 選單 like
-// let m_filled = document.querySelector("img.mheart_filled");
-// let likes = localStorage.getItem("l_items");
-// console.log(likes);
-// if(likes != undefined && likes != "[]"){
-//     console.log("yes");
-//     m_filled.classList.add("-on");
-// }else{
-//     console.log("no");
-//     m_filled.classList.remove("-on");
-// };
-
-
-
 function get_items(){
     let l_items = JSON.parse(localStorage.getItem("l_items")); //抓出來是字串再轉回物件
-    console.log(l_items);
+    // console.log(l_items);
            
     if (l_items) {
         let item_html = "";

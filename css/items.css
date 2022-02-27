@@ -148,11 +148,6 @@
         margin-left: 5%;
     }
 
-    /* .opic{
-        width: 60%;
-        margin-left: 2%;
-        border: 1px solid red;
-    } */
     .swiper{
         margin-left: 2%;
     }
@@ -254,11 +249,10 @@
     width: 27px;
     vertical-align: middle;
     transition: .3s;
-    opacity: 1;
 }
 
-.heart:hover{
-    opacity: 1;
+.heart_empty:hover{
+    opacity: .8;
 }
 
 .heart_filled{
