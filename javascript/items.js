@@ -137,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // 回存至 localStorage
       localStorage.setItem("l_items", JSON.stringify(updated_l_items));
 
+      menulike_check();
+
       }else{
 
         h_filled.classList.add("-on");
@@ -164,7 +166,9 @@ document.addEventListener("DOMContentLoaded", function () {
           l_items = [l_item];
         }
         localStorage.setItem("l_items", JSON.stringify(l_items));
-      }
+
+        menulike_check();
+      };
 
     };
 

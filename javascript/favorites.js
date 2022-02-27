@@ -1,7 +1,5 @@
 function get_items(){
     let l_items = JSON.parse(localStorage.getItem("l_items")); //抓出來是字串再轉回物件
-    // console.log(l_items);
-           
     if (l_items) {
         let item_html = "";
         l_items.forEach(function(item, i){
@@ -28,8 +26,20 @@ function get_items(){
             
 };
 
+function emptymessage_check(){
+  let str_l_items = localStorage.getItem("l_items");
+  let l_items = JSON.parse(str_l_items);
+  let empty_message = document.querySelector("div.emessage");
+  if (l_items  && str_l_items != "[]") {
+    empty_message.setAttribute("style", "display: none;");
+  }else{
+    empty_message.setAttribute("style", "display: block;");
+  };
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     get_items();
+    emptymessage_check();
 
     let gitem = document.getElementsByClassName("gitem");
     let overlay = document.getElementById("overlay");
@@ -182,6 +192,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // 回存至 localStorage
         localStorage.setItem("l_items", JSON.stringify(updated_l_items));
   
+        menulike_check();
+        emptymessage_check();
+
         }else{
   
           h_filled.classList.add("-on");
@@ -211,6 +224,8 @@ document.addEventListener("DOMContentLoaded", function () {
           localStorage.setItem("l_items", JSON.stringify(l_items));
         }
   
+        menulike_check();
+        emptymessage_check();
       };
   
     });

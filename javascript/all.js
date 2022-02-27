@@ -30,20 +30,25 @@ pli_btn.addEventListener("click", function(){
 });
 
 // 選單 like
-let m_filled = document.querySelectorAll("img.mheart_filled");
-let m_empty = document.querySelectorAll("img.mheart_empty");
-let likes = localStorage.getItem("l_items");
-m_filled.forEach(function(mb, i){
-    if(likes != undefined && likes != "[]"){
-        mb.classList.add("-on");
-        m_empty[0].classList.add("-off");
-        m_empty[1].classList.add("-off");
-    }else{
-        mb.classList.remove("-on");
-        m_empty[0].classList.remove("-off");
-        m_empty[1].classList.remove("-off");
-    }
-});
+function menulike_check(){
+    let m_filled = document.querySelectorAll("img.mheart_filled");
+    let m_empty = document.querySelectorAll("img.mheart_empty");
+    let likes = localStorage.getItem("l_items");
+    m_filled.forEach(function(mb, i){
+        if(likes != undefined && likes != "[]"){
+            mb.classList.add("-on");
+            m_empty[0].classList.add("-off");
+            m_empty[1].classList.add("-off");
+        }else{
+            mb.classList.remove("-on");
+            m_empty[0].classList.remove("-off");
+            m_empty[1].classList.remove("-off");
+        }
+    });
+};
+
+menulike_check();
+
 
 
 

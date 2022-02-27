@@ -13,7 +13,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/items.css">
-    <!-- <link rel="stylesheet" href="css/favorites.css"> -->
+    <style>
+        .emessage h4{
+            text-align: center;
+        }
+        @media (max-width: 576.98px) {
+            .emessage h4{
+                font-size: 20px;
+                margin-top: 100px;
+            } 
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -93,6 +103,9 @@
         </div>
     </section>
     <!-- Main Block -->
+    <div class="emessage">
+        <h4>Your favorites list is empty.</h4>
+    </div>
     <ul class="main wrapper favoritelist">
      
     </ul>
