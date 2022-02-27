@@ -8,7 +8,7 @@ ham_b.addEventListener("click", function(){
     ham_menu.classList.toggle("active");
     hbtns.forEach(function(hbtn){
         hbtn.classList.toggle("active");
-      });
+    });
     
 });
 
@@ -28,6 +28,23 @@ pli_btn.addEventListener("click", function(){
     let p_title = document.querySelector(".pli a");
     p_title.classList.toggle("currentpage");
 });
+
+// 選單 like
+let m_filled = document.querySelectorAll("img.mheart_filled");
+let likes = localStorage.getItem("l_items");
+console.log(likes);
+m_filled.forEach(function(mb, i){
+    if(likes != undefined && likes != "[]"){
+        console.log("yes");
+        // m_filled.classList.add("-on");
+        mb.classList.add("-on");
+    }else{
+        console.log("no");
+        // m_filled.classList.remove("-on");
+        mb.classList.remove("-on");
+    }
+});
+
 
 
 // ------ Footer RWD ------

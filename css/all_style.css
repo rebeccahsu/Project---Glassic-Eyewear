@@ -127,7 +127,7 @@ header{
     flex-grow: 1;
 }
 
-.main-sel img{
+.logo>img{
     width: 80px;
 }
 
@@ -320,7 +320,6 @@ ol.ham_subsel{
     height: 1px;
     background-color: #F0EBD8;
     margin-bottom: 20px;
-    animation: subsel .5s linear 1;
 }
 
 .ham_subsel li:last-child::after{
@@ -330,18 +329,53 @@ ol.ham_subsel{
     height: 1px;
     background-color: #F0EBD8;
     margin: 20px 0;
-    animation: subsel .5s linear 1;
 }
 
-@keyframes subsel{
-    0% {
-        opacity: 0;
-    }
+/* --- Favorite List button --- */
 
-    100%{
-        opacity: 1;
-    }
+.main-sel ul>li.fa{
+    flex-grow: 0;
 }
+
+.ham-menu li.fa {
+    padding: 0 0 0 8px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.mheart{
+    width: 21px;
+    /* border: 1px solid blue; */
+    vertical-align: middle;
+    transition: .3s;
+    opacity: .8;
+}
+
+.mheart:hover{
+    opacity: .5;
+}
+
+.mheart_filled{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.ham-menu li.fa .mheart_filled{
+    top: calc(50% + 2px);
+    left: 8px;
+}
+
+.mheart_filled.-on{
+    opacity: 1;
+}
+
+.mheart_filled:hover{
+    opacity: .5;
+}
+
 
 /* --------- Header Mediaquery----------- */
 
@@ -667,8 +701,8 @@ div.backtop:hover{
 
 @media (max-width: 575.98px){
     div.backtop{
-        right: 10px;
-        bottom: 10px;
+        right: 20px;
+        bottom: 20px;
     }
 
     .backtop img{

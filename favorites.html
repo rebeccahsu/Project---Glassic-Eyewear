@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all_style.css">
     <link rel="stylesheet" href="css/items.css">
-    <link rel="stylesheet" href="css/favorites.css">
+    <!-- <link rel="stylesheet" href="css/favorites.css"> -->
 </head>
 <body>
     <!-- Header -->
@@ -36,17 +36,12 @@
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="stores.html">STORES</a></li>
-                <li class="fa"><a href="favorites.html">
-                        <img class="heart heart_empty" src="img/heart.svg" alt="">
-                        <img class="heart heart_filled" src="img/heart_filled.svg" alt="">
-                    
-                    <!-- <span class="material-icons favorite_b">
-                        favorite_border
-                    </span> -->
-                    <!-- <span class="material-icons favorite">
-                        favorite
-                    </span> -->
-                </a></li>
+                <li class="fa">
+                    <a href="favorites.html">
+                        <img class="mheart mheart_empty" src="img/heart.svg" alt="">
+                        <img class="mheart mheart_filled" src="img/heart_filled.svg" alt="">
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -77,6 +72,12 @@
                     <li><a href="lookbook.html">LOOKBOOK</a></li>
                     <li><a href="news.html">NEWS</a></li>
                     <li><a href="stores.html">STORES</a></li>
+                    <li class="fa">
+                        <a href="favorites.html">
+                            <img class="mheart mheart_empty" src="img/heart.svg" alt="">
+                            <img class="mheart mheart_filled" src="img/heart_filled.svg" alt="">
+                        </a>
+                    </li>
             </ul>
         </nav>
     </header>
@@ -87,79 +88,11 @@
         </div>
         <div class="view">
             <img src="img/favoritestop.png" alt="">
-            <!-- Top Block Mask-->
-            <!-- <div class="topmask">
-                <h3>Evans C.</h3>
-            </div> -->
         </div>
     </section>
     <!-- Main Block -->
-    <ul class="main wrapper">
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc128x2.jpg" alt="Jones M. 135">
-            <h4 class="itemname">Evans C. 128</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc128-2x2.jpg" alt="">
-                <p class="icolor">Golden</p>
-                <p class="size">57/18 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc379x2.jpg" alt="Jones M. 267">
-            <h4 class="itemname">Evans C. 379</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc379-2x2.jpg" alt="">
-                <p class="icolor">Gray</p>
-                <p class="size">48/22 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc562x2.jpg" alt="Jones M. 268">
-            <h4 class="itemname">Evans C. 562</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc562-2x2.jpg" alt="">
-                <p class="icolor">Golden</p>
-                <p class="size">57/18 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
-
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc452x2.jpg" alt="Jones M. 305">
-            <h4 class="itemname">Evans C. 452</h4>
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc452-2x2.jpg" alt="">
-                <p class="icolor">Brown</p>
-                <p class="size">56/19 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
-
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc453x2.jpg" alt="Jones M. 563">
-            <h4 class="itemname">Evans C. 453</h4>
-
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc453-2x2.jpg" alt="">
-                <p class="icolor">Matte Gunmetal</p>
-                <p class="size">56/19 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
-
-        <li class="gitem">
-            <img class="ipic" src="img/items/evansc454x2.jpg" alt="Jones M. 145">
-            <h4 class="itemname">Evans C. 454</h4>
-
-            <div class="info">
-                <img class="ipic2" src="img/items/evansc454-2x2.jpg" alt="">
-                <p class="icolor">Black</p>
-                <p class="size">56/19 mm</p>
-                <p class="material">Stainless Steel</p>
-            </div>
-        </li>
+    <ul class="main wrapper favoritelist">
+     
     </ul>
     <!-- Overlay -->
     <div class="overlay noshow" id="overlay">
@@ -171,6 +104,10 @@
                     <img class="swiper-slide" id="opicimg2" src="" alt="">
                 </div>
                 <div class="swiper-pagination"></div>
+                <div class="like">
+                    <img class="heart heart_empty" src="img/heart.svg" alt="">
+                    <img class="heart heart_filled" src="img/heart_filled.svg" alt="">
+                </div>
             </div>
             <div id="magnifier"></div>
             <div class="otext">
@@ -249,7 +186,6 @@
     <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="javascript/all.js"></script>
-    <script src="javascript/items.js"></script>
     <script src="javascript/favorites.js"></script>
 </body>
 </html>

@@ -47,6 +47,10 @@
     cursor: pointer;
 }
 
+.gitem.fade_out{
+    opacity: 0;
+}
+
 .gitem img{
     width: 300px;
 }
