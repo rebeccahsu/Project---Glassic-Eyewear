@@ -6,11 +6,11 @@ window.addEventListener("load", function(){
         $(".bar1").attr("style", "animation: bar 1.5s ease;");
         $(".bar2").attr("style", "animation: bar 1.5s .3s ease;");
         $(".bar3").attr("style", "animation: bar 1.5s .6s ease;");
-    }, 2000);
+    }, 500);
 
     setTimeout(function(){
         $(".bar").css("width", "0%");
-    }, 2500);
+    }, 2000);
 
     setTimeout(function(){
         $(".loadingpage").remove();

@@ -35,12 +35,8 @@ let likes = localStorage.getItem("l_items");
 console.log(likes);
 m_filled.forEach(function(mb, i){
     if(likes != undefined && likes != "[]"){
-        console.log("yes");
-        // m_filled.classList.add("-on");
         mb.classList.add("-on");
     }else{
-        console.log("no");
-        // m_filled.classList.remove("-on");
         mb.classList.remove("-on");
     }
 });
