@@ -154,6 +154,11 @@ label.bccard {
         margin-bottom: 80px;
     }
 
+    .bccarousel.slidein.ltr{
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
     label.bccard {
         width: 201px;
     }

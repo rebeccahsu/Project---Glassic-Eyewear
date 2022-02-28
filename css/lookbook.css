@@ -111,6 +111,7 @@ main>section{
 
     .look-pic1.slidein{
         opacity: 1;
+        animation: fadein 1.5s linear;
     }
 
     .ltr{

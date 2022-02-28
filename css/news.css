@@ -126,6 +126,12 @@ article .content .np{
         margin-top: 80px;
     }
 
+    .newscard.fadein:nth-child(1), .newscard.fadein:nth-child(2){
+        opacity: 1;
+        transform: scale(1);
+        animation: fadein 1s linear;
+    }
+
 }
 
 @media (min-width: 880px) and (max-width: 980px){
