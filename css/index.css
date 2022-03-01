@@ -488,9 +488,9 @@ label.bccard {
         transform: translate(-50%, -50%);
     }
 
-    .vcontainer .logomark{
+    /* .vcontainer .logomark{
         display: none;
-    }
+    } */
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
