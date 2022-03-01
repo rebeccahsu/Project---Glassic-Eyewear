@@ -12,6 +12,7 @@ ham_b.addEventListener("click", function(){
     let ham_mask = document.querySelector("div#ham_mask");
     ham_mask.classList.toggle("noshow");
     ham_mask.addEventListener("click", function(){
+        ham_mask.setAttribute("style", "animation: fadeout 1s linear")
         ham_mask.classList.add("noshow");
         ham_menu.classList.remove("active");
         hbtns.forEach(function(hbtn){
