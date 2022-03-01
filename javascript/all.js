@@ -9,7 +9,15 @@ ham_b.addEventListener("click", function(){
     hbtns.forEach(function(hbtn){
         hbtn.classList.toggle("active");
     });
-    
+    let ham_mask = document.querySelector("div#ham_mask");
+    ham_mask.classList.toggle("noshow");
+    ham_mask.addEventListener("click", function(){
+        ham_mask.classList.add("noshow");
+        ham_menu.classList.remove("active");
+        hbtns.forEach(function(hbtn){
+            hbtn.classList.remove("active");
+    });
+    });
 });
 
 let p_subsel = document.querySelector("ol.ham_subsel");

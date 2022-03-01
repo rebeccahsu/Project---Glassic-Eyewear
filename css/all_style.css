@@ -251,6 +251,7 @@ ul.ham-menu{
     padding: 10px;
     transition: 1s;
     transform: translateX(120%);
+    z-index: 500;
 }
 
 ul.ham-menu.active{
@@ -329,6 +330,16 @@ ol.ham_subsel{
     height: 1px;
     background-color: #F0EBD8;
     margin: 20px 0;
+}
+
+#ham_mask{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background: rgba(1, 1, 1, 0);
+    z-index: 300;
+    width: 100%;
+    height: calc(100vh - 50px);
 }
 
 /* --- Favorite List button --- */
