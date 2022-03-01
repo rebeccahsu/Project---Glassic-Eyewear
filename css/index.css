@@ -191,6 +191,13 @@ label.bccard {
         transform: translatex(0) scale(1);
         opacity: 1;
     }
+    #bcitem-1:checked ~ .bccards .bci3:hover, #bcitem-2:checked ~ .bccards .bci1:hover, #bcitem-3:checked ~ .bccards .bci2:hover {
+        transform: translatex(-45%) scale(.9);
+    }
+    
+    #bcitem-1:checked ~ .bccards .bci2:hover, #bcitem-2:checked ~ .bccards .bci3:hover, #bcitem-3:checked ~ .bccards .bci1:hover {
+        transform: translatex(45%) scale(.9);
+    }
 
     .bc-text.fadein{
         opacity: 1;
