@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let omaterial = document.getElementById("omaterial");
     
     document.addEventListener("click", function(e){
-      console.log(e.target);
+      // console.log(e.target);
       if(e.target.classList.contains("ipic") || e.target.classList.contains("itemname")){
         mask.classList.toggle("noshow");
         overlay.classList.toggle("noshow");

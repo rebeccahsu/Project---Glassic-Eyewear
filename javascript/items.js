@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         
         let l_items = JSON.parse(localStorage.getItem("l_items")); //抓出來是字串再轉回物件
-        console.log(l_items);
+        // console.log(l_items);
         
         if (l_items) { // 若存在
 
